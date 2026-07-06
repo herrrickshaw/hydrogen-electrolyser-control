@@ -1,0 +1,12 @@
+# Core Dependencies
+Flask==3.0.0
+Flask-CORS==4.0.0
+
+# Optional Dependencies
+numpy>=1.21.0  # For advanced ramp profiles
+requests>=2.28.0  # For Python client
+
+# Development (optional)
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
