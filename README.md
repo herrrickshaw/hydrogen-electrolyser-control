@@ -1,5 +1,7 @@
 # Hydrogen Electrolyser Control System
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/herrrickshaw/hydrogen-electrolyser-control/blob/main/notebooks/colab_test.ipynb)
+
 A comprehensive Python framework for controlling hydrogen electrolysers (PEM, AEM, Alkaline) with voltage regulation, inverter frequency management, and real-time monitoring.
 
 ## Features
