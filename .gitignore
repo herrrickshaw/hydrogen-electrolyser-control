@@ -57,3 +57,7 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
+
+# Keep the real test suite under tests/ (the test_*.py rule above was for scratch scripts)
+!tests/
+!tests/test_*.py
