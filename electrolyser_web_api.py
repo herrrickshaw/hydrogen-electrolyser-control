@@ -7,6 +7,7 @@ Built with Flask for easy integration
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import logging
+import re
 from typing import Dict, Any
 from datetime import datetime
 
@@ -340,6 +341,19 @@ def get_performance():
 
 # ==================== Data Export Endpoints ====================
 
+# A report name is a plain file name in the server's working directory: no
+# directory component, no traversal, no hidden files, .json only. Anything else
+# would let an API caller write the report to an arbitrary path on the host.
+_SAFE_REPORT_NAME = re.compile(r'^[A-Za-z0-9][A-Za-z0-9_.-]*\.json$')
+
+
+def _safe_report_filename(name) -> str:
+    """Validate a client-supplied report file name; raise ValueError if unsafe."""
+    if not isinstance(name, str) or not _SAFE_REPORT_NAME.match(name) or '..' in name:
+        raise ValueError("filename must be a plain *.json name without directories")
+    return name
+
+
 @app.route('/api/export/report', methods=['POST'])
 def export_report():
     """Export operation report"""
@@ -347,7 +361,8 @@ def export_report():
         return jsonify({"error": "Controller not initialized"}), 500
 
     try:
-        filename = request.get_json().get('filename', 'electrolyser_report.json') if request.get_json() else 'electrolyser_report.json'
+        data = request.get_json(silent=True) or {}
+        filename = _safe_report_filename(data.get('filename', 'electrolyser_report.json'))
         report = controller.export_report(filename)
         return jsonify({
             "status": "exported",
