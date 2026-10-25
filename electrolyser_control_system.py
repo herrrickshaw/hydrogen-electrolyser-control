@@ -269,6 +269,13 @@ class ElectrolyserBase(ABC):
 
         logger.info(f"Electrolyser initialized: {specs.type.value}")
 
+    def _load_efficiency(self, load_factor: float) -> float:
+        """Efficiency falls as load rises: cell voltage climbs with current
+        density (activation + ohmic overpotential), so voltage efficiency
+        (1.48 V / V_cell) is highest at part load and lowest at full load."""
+        efficiency = self.specs.max_efficiency - (self.specs.max_efficiency - self.specs.min_efficiency) * load_factor
+        return max(self.specs.min_efficiency, min(efficiency, self.specs.max_efficiency))
+
     @abstractmethod
     def calculate_efficiency(self) -> float:
         """Calculate current efficiency"""
@@ -332,12 +339,15 @@ class ElectrolyserBase(ABC):
 
         # Update energy production based on current operation
         if self.current_mode == OperatingMode.NORMAL and self.current_power > 0:
-            # Production rate: mol/s → Nm³/hour conversion
+            # Faraday's law: H2 [mol/s] = I * N_cells / (2F), i.e. production is
+            # proportional to stack current. The nameplate rates are at nominal
+            # current, so scale them by I / I_nominal.
             time_fraction = dt / 3600.0  # Convert dt from seconds to hours
+            current_fraction = self.current_current / self.specs.nominal_current
 
-            self.hydrogen_produced += self.specs.hydrogen_production_rate * time_fraction
-            self.oxygen_produced += self.specs.oxygen_production_rate * time_fraction
-            self.water_consumed += self.specs.water_consumption_rate * time_fraction
+            self.hydrogen_produced += self.specs.hydrogen_production_rate * current_fraction * time_fraction
+            self.oxygen_produced += self.specs.oxygen_production_rate * current_fraction * time_fraction
+            self.water_consumed += self.specs.water_consumption_rate * current_fraction * time_fraction
 
             logger.debug(f"H2: {self.hydrogen_produced:.2f} Nm³, O2: {self.oxygen_produced:.2f} Nm³")
 
@@ -410,8 +420,7 @@ class PEMElectrolyser(ElectrolyserBase):
 
         # Efficiency based on load (typically 60-75%)
         load_factor = self.current_power / self.specs.nominal_power
-        efficiency = self.specs.min_efficiency + (self.specs.max_efficiency - self.specs.min_efficiency) * load_factor
-        return min(efficiency, self.specs.max_efficiency)
+        return self._load_efficiency(load_factor)
 
 
 class AEMElectrolyser(ElectrolyserBase):
@@ -445,8 +454,7 @@ class AEMElectrolyser(ElectrolyserBase):
             return 0.0
 
         load_factor = self.current_power / self.specs.nominal_power
-        efficiency = self.specs.min_efficiency + (self.specs.max_efficiency - self.specs.min_efficiency) * load_factor
-        return min(efficiency, self.specs.max_efficiency)
+        return self._load_efficiency(load_factor)
 
 
 class AlkalineElectrolyser(ElectrolyserBase):
@@ -480,8 +488,7 @@ class AlkalineElectrolyser(ElectrolyserBase):
             return 0.0
 
         load_factor = self.current_power / self.specs.nominal_power
-        efficiency = self.specs.min_efficiency + (self.specs.max_efficiency - self.specs.min_efficiency) * load_factor
-        return min(efficiency, self.specs.max_efficiency)
+        return self._load_efficiency(load_factor)
 
 
 class ElectrolyserControlSystem:
