@@ -1,3 +1,5 @@
+> **Scope note:** every result below comes from simulation on synthetic profiles, not hardware, and the scripts that produced them are not in this repository. "Production-ready" and "deploy" wording in this document is not supported by the repository's tests; see [VALIDATION_SCOPE_CLARIFICATION.md](VALIDATION_SCOPE_CLARIFICATION.md) and the README.
+
 # Complete Electrolyser Control Project - Final Summary
 
 **Project Status**: ✅ **COMPLETE**
