@@ -1,16 +1,20 @@
 """
 Hydrogen Electrolyser Control System
 Supports PEM, AEM, and alkaline electrolysers with voltage and inverter frequency control
-"""
 
-import time
-import logging
-from enum import Enum
-from dataclasses import dataclass
-from typing import Optional, Dict, Tuple
-from abc import ABC, abstractmethod
+This is a simulation / control-logic framework: no hardware drivers are included, and the
+numeric specs below are illustrative values, not vendor data.
+"""
+from __future__ import annotations
+
 import json
+import logging
+import time
+from abc import ABC, abstractmethod
+from dataclasses import dataclass
 from datetime import datetime
+from enum import Enum
+from typing import Dict, Tuple
 
 # Configure logging
 logging.basicConfig(
@@ -18,6 +22,9 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# PID integral clamp (anti-windup), in volt-seconds
+PID_INTEGRAL_LIMIT = 10.0
 
 
 class ElectrolyserType(Enum):
@@ -229,7 +236,7 @@ class VoltageRegulator:
 
         # PID calculation
         self.integral += error * dt
-        self.integral = max(-10, min(10, self.integral))  # Anti-windup
+        self.integral = max(-PID_INTEGRAL_LIMIT, min(PID_INTEGRAL_LIMIT, self.integral))  # Anti-windup
 
         derivative = (error - self.prev_error) / dt if dt > 0 else 0
         self.prev_error = error
@@ -242,6 +249,16 @@ class VoltageRegulator:
         logger.debug(f"Voltage regulation: target={target_voltage}V, current={current_voltage}V, adjusted={new_voltage}V")
 
         return new_voltage
+
+
+def load_scaled_efficiency(specs: ElectrolyserSpecs, power: float) -> float:
+    """Efficiency in % for a power draw in W: linear in load between min and max efficiency, capped at max."""
+    if power == 0:
+        return 0.0
+
+    load_factor = power / specs.nominal_power
+    efficiency = specs.min_efficiency + (specs.max_efficiency - specs.min_efficiency) * load_factor
+    return min(efficiency, specs.max_efficiency)
 
 
 class ElectrolyserBase(ABC):
@@ -405,13 +422,7 @@ class PEMElectrolyser(ElectrolyserBase):
 
     def calculate_efficiency(self) -> float:
         """Calculate PEM efficiency"""
-        if self.current_power == 0:
-            return 0.0
-
-        # Efficiency based on load (typically 60-75%)
-        load_factor = self.current_power / self.specs.nominal_power
-        efficiency = self.specs.min_efficiency + (self.specs.max_efficiency - self.specs.min_efficiency) * load_factor
-        return min(efficiency, self.specs.max_efficiency)
+        return load_scaled_efficiency(self.specs, self.current_power)
 
 
 class AEMElectrolyser(ElectrolyserBase):
@@ -441,12 +452,7 @@ class AEMElectrolyser(ElectrolyserBase):
 
     def calculate_efficiency(self) -> float:
         """Calculate AEM efficiency"""
-        if self.current_power == 0:
-            return 0.0
-
-        load_factor = self.current_power / self.specs.nominal_power
-        efficiency = self.specs.min_efficiency + (self.specs.max_efficiency - self.specs.min_efficiency) * load_factor
-        return min(efficiency, self.specs.max_efficiency)
+        return load_scaled_efficiency(self.specs, self.current_power)
 
 
 class AlkalineElectrolyser(ElectrolyserBase):
@@ -476,39 +482,42 @@ class AlkalineElectrolyser(ElectrolyserBase):
 
     def calculate_efficiency(self) -> float:
         """Calculate alkaline efficiency"""
-        if self.current_power == 0:
-            return 0.0
+        return load_scaled_efficiency(self.specs, self.current_power)
 
-        load_factor = self.current_power / self.specs.nominal_power
-        efficiency = self.specs.min_efficiency + (self.specs.max_efficiency - self.specs.min_efficiency) * load_factor
-        return min(efficiency, self.specs.max_efficiency)
+
+def default_inverter_config() -> InverterConfig:
+    """Inverter used by ElectrolyserControlSystem: 5 kW, 200-240 V input, 50 Hz nominal (40-60 Hz range)."""
+    return InverterConfig(
+        rated_power=5000.0,
+        input_voltage_min=200.0,
+        input_voltage_max=240.0,
+        output_frequency=50.0,
+        frequency_range=(40.0, 60.0),
+        efficiency=95.0,
+        switching_frequency=16000.0
+    )
+
+
+# Registry: add a new electrolyser type here without editing ElectrolyserControlSystem
+ELECTROLYSER_CLASSES = {
+    ElectrolyserType.PEM: PEMElectrolyser,
+    ElectrolyserType.AEM: AEMElectrolyser,
+    ElectrolyserType.ALKALINE: AlkalineElectrolyser,
+}
 
 
 class ElectrolyserControlSystem:
     """Main control system for managing electrolyser operation"""
 
     def __init__(self, electrolyser_type: ElectrolyserType = ElectrolyserType.PEM):
-        # Initialize inverter
-        inverter_config = InverterConfig(
-            rated_power=5000.0,
-            input_voltage_min=200.0,
-            input_voltage_max=240.0,
-            output_frequency=50.0,
-            frequency_range=(40.0, 60.0),
-            efficiency=95.0,
-            switching_frequency=16000.0
-        )
-        self.inverter = InverterController(inverter_config)
+        self.inverter = InverterController(default_inverter_config())
 
         # Initialize electrolyser based on type
-        if electrolyser_type == ElectrolyserType.PEM:
-            self.electrolyser = PEMElectrolyser(self.inverter)
-        elif electrolyser_type == ElectrolyserType.AEM:
-            self.electrolyser = AEMElectrolyser(self.inverter)
-        elif electrolyser_type == ElectrolyserType.ALKALINE:
-            self.electrolyser = AlkalineElectrolyser(self.inverter)
-        else:
-            raise ValueError(f"Unsupported electrolyser type: {electrolyser_type}")
+        try:
+            electrolyser_cls = ELECTROLYSER_CLASSES[electrolyser_type]
+        except KeyError:
+            raise ValueError(f"Unsupported electrolyser type: {electrolyser_type}") from None
+        self.electrolyser = electrolyser_cls(self.inverter)
 
         self.log_file = f"electrolyser_{electrolyser_type.value.lower()}_log.json"
         self.operation_log = []
