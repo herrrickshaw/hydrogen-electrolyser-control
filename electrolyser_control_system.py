@@ -626,7 +626,7 @@ class ElectrolyserControlSystem:
         print(f"Temperature: {status['temperature']:.1f} °C")
         print(f"Pressure: {status['pressure']:.2f} bar")
         print(f"Efficiency: {status['efficiency']:.1f} %")
-        print(f"\nProduction:")
+        print("\nProduction:")
         print(f"  Hydrogen: {status['hydrogen_produced']:.3f} Nm³")
         print(f"  Oxygen: {status['oxygen_produced']:.3f} Nm³")
         print(f"  Water consumed: {status['water_consumed']:.2f} L")

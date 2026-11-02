@@ -72,7 +72,7 @@ def _slim(status: Dict[str, Any]) -> Dict[str, Any]:
 
 def run_all(repo_dir: str) -> Dict[str, Any]:
     out: Dict[str, Any] = {}
-    with _sandbox(repo_dir) as clock:
+    with _sandbox(repo_dir):
         cs = importlib.import_module("electrolyser_control_system")
         adv = importlib.import_module("electrolyser_advanced_control")
         adv.datetime = FakeDatetime  # type: ignore[attr-defined]

@@ -1,14 +1,21 @@
 """Unit tests for pure/local logic: safety limits, inverter limits, PID clamp, ramp shapes, loggers."""
 import csv
+from datetime import datetime
+
 import pytest
 
 from electrolyser_advanced_control import (
-    DataLogger, OperationEvent, RampProfile, RampSchedule, SafetyInterlocks,
+    DataLogger,
+    OperationEvent,
+    RampProfile,
+    RampSchedule,
+    SafetyInterlocks,
 )
 from electrolyser_control_system import (
-    ElectrolyserControlSystem, ElectrolyserType, OperatingMode,
+    ElectrolyserControlSystem,
+    ElectrolyserType,
+    OperatingMode,
 )
-from datetime import datetime
 
 
 def make(kind=ElectrolyserType.PEM):
@@ -103,3 +110,9 @@ def test_data_logger_csv_roundtrip(tmp_path, monkeypatch):
     rows = list(csv.reader(open(dl.csv_file)))
     assert rows[0][0] == "timestamp" and rows[1][2] == "1.00"
     assert dl.get_summary()["total_events"] == 1
+
+
+def test_examples_module_imports():
+    import electrolyser_examples
+
+    assert callable(electrolyser_examples.main)

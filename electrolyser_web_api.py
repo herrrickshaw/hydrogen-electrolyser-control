@@ -4,18 +4,14 @@ RESTful API for remote control and monitoring of hydrogen electrolysers
 Built with Flask for easy integration
 """
 
-from flask import Flask, request, jsonify
-from flask_cors import CORS
 import logging
-from typing import Dict, Any
 from datetime import datetime
+from typing import Dict
 
-from electrolyser_advanced_control import (
-    AdvancedElectrolyserController,
-    RampProfile,
-    ElectrolyserType,
-    OperationEvent
-)
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+
+from electrolyser_advanced_control import AdvancedElectrolyserController, ElectrolyserType, RampProfile
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -537,26 +533,26 @@ def run_server(host: str = "0.0.0.0", port: int = 5000, electrolyser_type: str =
 
     init_api(electrolyser)
 
-    print(f"\n" + "="*70)
-    print(f"Electrolyser Web API Server")
+    print("\n" + "="*70)
+    print("Electrolyser Web API Server")
     print(f"Type: {electrolyser_type}")
     print(f"Starting on {host}:{port}")
-    print(f"="*70)
-    print(f"\nAPI Documentation:")
-    print(f"  GET  /api/health - Health check")
-    print(f"  GET  /api/status - Current status")
-    print(f"  POST /api/control/start - Start operation")
-    print(f"  POST /api/control/stop - Stop operation")
-    print(f"  POST /api/control/voltage - Set voltage")
-    print(f"  POST /api/control/power - Set power")
-    print(f"  POST /api/control/frequency - Set frequency")
-    print(f"  POST /api/schedule/power-ramp - Schedule power ramp")
-    print(f"  POST /api/schedule/voltage-ramp - Schedule voltage ramp")
-    print(f"  GET  /api/monitoring/safety - Safety status")
-    print(f"  GET  /api/monitoring/production - Production data")
-    print(f"  GET  /api/monitoring/performance - Performance metrics")
+    print("="*70)
+    print("\nAPI Documentation:")
+    print("  GET  /api/health - Health check")
+    print("  GET  /api/status - Current status")
+    print("  POST /api/control/start - Start operation")
+    print("  POST /api/control/stop - Stop operation")
+    print("  POST /api/control/voltage - Set voltage")
+    print("  POST /api/control/power - Set power")
+    print("  POST /api/control/frequency - Set frequency")
+    print("  POST /api/schedule/power-ramp - Schedule power ramp")
+    print("  POST /api/schedule/voltage-ramp - Schedule voltage ramp")
+    print("  GET  /api/monitoring/safety - Safety status")
+    print("  GET  /api/monitoring/production - Production data")
+    print("  GET  /api/monitoring/performance - Performance metrics")
     print(f"\nAPI running at http://{host}:{port}")
-    print(f"="*70 + "\n")
+    print("="*70 + "\n")
 
     app.run(host=host, port=port, debug=False)
 

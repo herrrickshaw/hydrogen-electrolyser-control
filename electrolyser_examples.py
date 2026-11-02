@@ -3,18 +3,11 @@ Practical Examples for Hydrogen Electrolyser Control System
 Run these examples to test different electrolyser configurations and operations
 """
 
-import time
 import sys
-from electrolyser_control_system import (
-    ElectrolyserControlSystem,
-    ElectrolyserType,
-    OperatingMode
-)
-from electrolyser_advanced_control import (
-    AdvancedElectrolyserController,
-    RampProfile
-)
+import time
 
+from electrolyser_advanced_control import AdvancedElectrolyserController, RampProfile
+from electrolyser_control_system import ElectrolyserControlSystem, ElectrolyserType, OperatingMode
 
 # ==================== Example 1: Basic PEM Operation ====================
 
@@ -233,7 +226,7 @@ def example_advanced_scheduling():
     print(f"   H2 produced: {summary['total_hydrogen']:.4f} Nm³")
     print(f"   Alerts: {summary['alerts']}, Warnings: {summary['warnings']}")
 
-    print(f"\n   Logs saved to:")
+    print("\n   Logs saved to:")
     print(f"   - CSV: {controller.logger.csv_file}")
     print(f"   - JSON: {controller.logger.json_file}")
 
@@ -266,7 +259,7 @@ def example_electrolyser_comparison():
         system.start_operation()
         specs = system.electrolyser.specs
 
-        print(f"\nSpecifications:")
+        print("\nSpecifications:")
         print(f"  Nominal Voltage: {specs.nominal_voltage}V")
         print(f"  Nominal Current: {specs.nominal_current}A")
         print(f"  Nominal Power: {specs.nominal_power}W")
@@ -281,7 +274,7 @@ def example_electrolyser_comparison():
 
         # Operate for 30 seconds
         print("Operating for 30 seconds...")
-        for i in range(300):
+        for _ in range(300):
             system.electrolyser.update_state(0.1)
             time.sleep(0.01)
 
@@ -296,7 +289,7 @@ def example_electrolyser_comparison():
             "current": status['current']
         }
 
-        print(f"\nResults:")
+        print("\nResults:")
         print(f"  Final Efficiency: {status['efficiency']:.1f}%")
         print(f"  H2 Produced: {status['hydrogen_produced']:.4f} Nm³")
         print(f"  O2 Produced: {status['oxygen_produced']:.4f} Nm³")
@@ -388,13 +381,13 @@ def example_safety_monitoring():
     system = ElectrolyserControlSystem(ElectrolyserType.PEM)
     specs = system.electrolyser.specs
 
-    print(f"\nPEM Safety Limits:")
+    print("\nPEM Safety Limits:")
     print(f"  Voltage: {specs.min_voltage}V - {specs.max_voltage}V")
     print(f"  Current: {specs.min_current}A - {specs.max_current}A")
     print(f"  Temperature: {specs.temperature_min}°C - {specs.temperature_max}°C")
     print(f"  Pressure: {specs.pressure_min} - {specs.pressure_max} bar")
 
-    print(f"\n1. Starting normal operation...")
+    print("\n1. Starting normal operation...")
     system.start_operation()
     system.set_voltage(45.0)
     system.set_power(3500.0)
@@ -404,10 +397,10 @@ def example_safety_monitoring():
     status = system.get_status()
     print(f"   Safe: {status['safety']['safe']}")
 
-    print(f"\n2. Testing voltage limits...")
+    print("\n2. Testing voltage limits...")
 
     # Test normal voltage
-    print(f"   Setting voltage to 45V (normal)...")
+    print("   Setting voltage to 45V (normal)...")
     system.set_voltage(45.0)
     status = system.get_status()
     print(f"   Safe: {status['safety']['safe']}")
@@ -424,17 +417,17 @@ def example_safety_monitoring():
     system.safety_monitor.clear()
     system.set_voltage(45.0)
 
-    print(f"\n3. Testing current limits...")
+    print("\n3. Testing current limits...")
 
     # Try to exceed current
-    print(f"   Attempting to set power to 30000W (exceeds current limit)...")
+    print("   Attempting to set power to 30000W (exceeds current limit)...")
     system.set_power(30000.0)
     status = system.get_status()
     print(f"   Safe: {status['safety']['safe']}")
     if not status['safety']['safe']:
         print(f"   Alert: {status['safety']['alerts'][0]}")
 
-    print(f"\n4. Stopping...")
+    print("\n4. Stopping...")
     system.stop_operation()
 
     print("✓ Example 7 complete\n")
@@ -472,7 +465,6 @@ def example_production_calculation():
                 pass  # Simulate without printing
 
         status = system.get_status()
-        specs = system.electrolyser.specs
 
         # Calculate production rates
         runtime_hours = status['run_time'] / 3600
