@@ -43,9 +43,11 @@ env/
 *.json
 electrolyser_*.json
 electrolyser_*.csv
+!tests/golden/*.json
 
 # Test/demo outputs
 test_*.py
+!tests/test_*.py
 demo_report.json
 *.db
 *.db-journal
@@ -57,3 +59,5 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
+.pytest_cache/
+.ruff_cache/
