@@ -1,0 +1,7201 @@
+{
+ "control_loop": {
+  "csv": "timestamp,mode,voltage,current,power,temperature,pressure,efficiency,hydrogen_produced,oxygen_produced,water_consumed,event_type,message\n2023-11-15T03:44:51.699913,NORMAL,30.00,0.00,1000.00,25.00,1.00,63.12,0.0000,0.0000,0.00,normal,\n2023-11-15T03:44:51.799912,NORMAL,30.00,34.41,1032.37,25.00,1.00,63.23,0.0001,0.0000,0.00,normal,\n2023-11-15T03:44:51.899912,NORMAL,30.45,35.57,1066.98,25.00,1.00,63.33,0.0001,0.0000,0.00,normal,\n2023-11-15T03:44:51.999912,NORMAL,30.69,36.25,1103.97,25.00,1.00,63.45,0.0001,0.0001,0.00,normal,\n2023-11-15T03:44:52.099912,NORMAL,31.08,37.26,1143.51,25.00,1.00,63.57,0.0001,0.0001,0.00,normal,\n2023-11-15T03:44:52.199912,NORMAL,31.42,38.15,1185.78,25.00,1.00,63.71,0.0002,0.0001,0.00,normal,\n2023-11-15T03:44:52.299912,NORMAL,31.80,39.18,1230.96,25.00,1.00,63.85,0.0002,0.0001,0.00,normal,\n2023-11-15T03:44:52.399912,NORMAL,32.19,40.22,1279.26,25.00,1.00,64.00,0.0002,0.0001,0.00,normal,\n2023-11-15T03:44:52.499912,NORMAL,32.60,41.34,1330.88,25.00,1.00,64.16,0.0002,0.0001,0.00,normal,\n2023-11-15T03:44:52.599912,NORMAL,33.02,42.51,1386.07,25.00,1.00,64.33,0.0003,0.0001,0.00,normal,\n2023-11-15T03:44:52.699912,NORMAL,33.46,43.76,1445.05,25.00,1.00,64.52,0.0003,0.0001,0.00,normal,\n2023-11-15T03:44:52.799911,NORMAL,33.91,45.07,1508.11,25.00,1.00,64.71,0.0003,0.0002,0.00,normal,\n2023-11-15T03:44:52.899911,NORMAL,34.37,46.46,1575.51,25.00,1.00,64.92,0.0003,0.0002,0.00,normal,\n2023-11-15T03:44:52.999911,NORMAL,34.84,47.94,1647.55,25.00,1.00,65.15,0.0004,0.0002,0.00,normal,\n2023-11-15T03:44:53.099911,NORMAL,35.32,49.50,1724.56,25.00,1.00,65.39,0.0004,0.0002,0.00,normal,\n2023-11-15T03:44:53.199911,NORMAL,35.82,51.15,1806.88,25.00,1.00,65.65,0.0004,0.0002,0.00,normal,\n2023-11-15T03:44:53.299911,NORMAL,36.32,52.90,1894.88,25.00,1.00,65.92,0.0004,0.0002,0.00,normal,\n2023-11-15T03:44:53.399911,NORMAL,36.83,54.76,1988.94,25.00,1.00,66.22,0.0005,0.0002,0.00,normal,\n2023-11-15T03:44:53.499911,NORMAL,37.35,56.73,2089.48,25.00,1.00,66.53,0.0005,0.0003,0.00,normal,\n2023-11-15T03:44:53.599911,NORMAL,37.88,58.82,2196.96,25.00,1.00,66.87,0.0005,0.0003,0.00,normal,\n2023-11-15T03:44:53.699911,NORMAL,38.41,61.03,2311.84,25.00,1.00,67.22,0.0006,0.0003,0.00,normal,\n2023-11-15T03:44:53.799911,NORMAL,38.96,63.38,2434.64,25.00,1.00,67.61,0.0006,0.0003,0.00,normal,\n2023-11-15T03:44:53.899910,NORMAL,39.50,65.87,2565.91,25.00,1.00,68.02,0.0006,0.0003,0.00,normal,\n2023-11-15T03:44:53.999910,NORMAL,40.06,68.51,2706.22,25.00,1.00,68.46,0.0006,0.0003,0.00,normal,\n2023-11-15T03:44:54.099910,NORMAL,40.62,71.30,2856.21,25.00,1.00,68.93,0.0007,0.0003,0.00,normal,\n2023-11-15T03:44:54.199910,NORMAL,41.18,74.27,3016.54,25.00,1.00,69.43,0.0007,0.0003,0.00,normal,\n2023-11-15T03:44:54.299910,NORMAL,41.74,77.42,3187.92,25.00,1.00,69.96,0.0007,0.0004,0.00,normal,\n2023-11-15T03:44:54.399910,NORMAL,42.30,80.77,3371.11,25.00,1.00,70.53,0.0007,0.0004,0.00,normal,\n2023-11-15T03:44:54.499910,NORMAL,42.87,84.32,3566.93,25.00,1.00,71.15,0.0008,0.0004,0.00,normal,\n2023-11-15T03:44:54.599910,NORMAL,43.44,88.09,3776.25,25.00,1.00,71.80,0.0008,0.0004,0.00,normal,\n2023-11-15T03:44:54.699910,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0008,0.0004,0.00,normal,\n2023-11-15T03:44:54.799910,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0008,0.0004,0.00,normal,\n2023-11-15T03:44:54.899909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0009,0.0004,0.00,normal,\n2023-11-15T03:44:54.999909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0009,0.0004,0.00,normal,\n2023-11-15T03:44:55.099909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0009,0.0005,0.00,normal,\n2023-11-15T03:44:55.199909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0009,0.0005,0.00,normal,\n2023-11-15T03:44:55.299909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0010,0.0005,0.00,normal,\n2023-11-15T03:44:55.399909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0010,0.0005,0.00,normal,\n2023-11-15T03:44:55.499909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0010,0.0005,0.00,normal,\n2023-11-15T03:44:55.599909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0011,0.0005,0.00,normal,\n2023-11-15T03:44:55.699909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0011,0.0005,0.00,normal,\n2023-11-15T03:44:55.799909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0011,0.0006,0.00,normal,\n2023-11-15T03:44:55.899909,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0011,0.0006,0.00,normal,\n2023-11-15T03:44:55.999908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0012,0.0006,0.00,normal,\n2023-11-15T03:44:56.099908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0012,0.0006,0.00,normal,\n2023-11-15T03:44:56.199908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0012,0.0006,0.00,normal,\n2023-11-15T03:44:56.299908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0012,0.0006,0.00,normal,\n2023-11-15T03:44:56.399908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0013,0.0006,0.00,normal,\n2023-11-15T03:44:56.499908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0013,0.0006,0.00,normal,\n2023-11-15T03:44:56.599908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0013,0.0007,0.00,normal,\n2023-11-15T03:44:56.699908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0013,0.0007,0.00,normal,\n2023-11-15T03:44:56.799908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0014,0.0007,0.00,normal,\n2023-11-15T03:44:56.899908,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0014,0.0007,0.00,normal,\n2023-11-15T03:44:56.999907,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0014,0.0007,0.00,normal,\n2023-11-15T03:44:57.099907,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0015,0.0007,0.00,normal,\n2023-11-15T03:44:57.199907,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0015,0.0007,0.00,normal,\n2023-11-15T03:44:57.299907,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0015,0.0008,0.00,normal,\n2023-11-15T03:44:57.399907,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0015,0.0008,0.00,normal,\n2023-11-15T03:44:57.499907,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0016,0.0008,0.00,normal,\n2023-11-15T03:44:57.599907,NORMAL,44.01,92.08,3999.99,25.00,1.00,72.50,0.0016,0.0008,0.00,normal,\n",
+  "events": [
+   {
+    "current": 0.0,
+    "efficiency": 63.125,
+    "event_type": "normal",
+    "hydrogen_produced": 2.638888888888889e-05,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 1.3194444444444444e-05,
+    "power": 1000.0,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:51.699913",
+    "voltage": 30.0,
+    "water_consumed": 2.5e-05
+   },
+   {
+    "current": 34.41248394653336,
+    "efficiency": 63.2261703699875,
+    "event_type": "normal",
+    "hydrogen_produced": 5.277777777777778e-05,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 2.638888888888889e-05,
+    "power": 1032.3745183960007,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:51.799912",
+    "voltage": 30.0,
+    "water_consumed": 5e-05
+   },
+   {
+    "current": 35.56603341965414,
+    "efficiency": 63.33431563309257,
+    "event_type": "normal",
+    "hydrogen_produced": 7.916666666666666e-05,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 3.958333333333333e-05,
+    "power": 1066.9810025896243,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:51.899912",
+    "voltage": 30.451799388,
+    "water_consumed": 7.500000000000001e-05
+   },
+   {
+    "current": 36.2531276753303,
+    "efficiency": 63.449915534864715,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00010555555555555555,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 5.277777777777778e-05,
+    "power": 1103.972971156709,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:51.999912",
+    "voltage": 30.693867337812,
+    "water_consumed": 0.0001
+   },
+   {
+    "current": 37.255483222285186,
+    "efficiency": 63.57348393634657,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00013194444444444443,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 6.597222222222222e-05,
+    "power": 1143.5148596309023,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.099912",
+    "voltage": 31.07830033839899,
+    "water_consumed": 0.000125
+   },
+   {
+    "current": 38.154674659103335,
+    "efficiency": 63.705570119904735,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00015833333333333332,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 7.916666666666666e-05,
+    "power": 1185.7824383695145,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.199912",
+    "voltage": 31.415029207201385,
+    "water_consumed": 0.00015000000000000001
+   },
+   {
+    "current": 39.18390735095031,
+    "efficiency": 63.84676123088243,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00018472222222222222,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 9.236111111111111e-05,
+    "power": 1230.963593882377,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.299912",
+    "voltage": 31.804122219808637,
+    "water_consumed": 0.00017500000000000003
+   },
+   {
+    "current": 40.22306150057093,
+    "efficiency": 63.997684887559494,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0002111111111111111,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00010555555555555555,
+    "power": 1279.2591640190371,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.399912",
+    "voltage": 32.19051973103293,
+    "water_consumed": 0.00020000000000000004
+   },
+   {
+    "current": 41.34396840582288,
+    "efficiency": 64.15901197102139,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0002375,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00011875,
+    "power": 1330.8838307268434,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.499912",
+    "voltage": 32.60223471609523,
+    "water_consumed": 0.00022500000000000005
+   },
+   {
+    "current": 42.51448056915233,
+    "efficiency": 64.33145960733867,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00026388888888888886,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00013194444444444443,
+    "power": 1386.0670743483743,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.599912",
+    "voltage": 33.02291722501621,
+    "water_consumed": 0.00025000000000000006
+   },
+   {
+    "current": 43.759131994721066,
+    "efficiency": 64.51579435531323,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00029027777777777776,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00014513888888888888,
+    "power": 1445.0541937002322,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.699912",
+    "voltage": 33.46002479789073,
+    "water_consumed": 0.00027500000000000007
+   },
+   {
+    "current": 45.071895606659986,
+    "efficiency": 64.7128335771462,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00031666666666666665,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00015833333333333332,
+    "power": 1508.1067446867855,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.799911",
+    "voltage": 33.90834544470314,
+    "water_consumed": 0.0003000000000000001
+   },
+   {
+    "current": 46.46367280355093,
+    "efficiency": 64.92345708766395,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00034305555555555554,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00017152777777777777,
+    "power": 1575.5062680524632,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.899911",
+    "voltage": 34.36952213242066,
+    "water_consumed": 0.0003250000000000001
+   },
+   {
+    "current": 47.93641732748973,
+    "efficiency": 65.1485992383941,
+    "event_type": "normal",
+    "hydrogen_produced": 0.00036944444444444443,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00018472222222222222,
+    "power": 1647.5517562861116,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:52.999911",
+    "voltage": 34.841583596781454,
+    "water_consumed": 0.0003500000000000001
+   },
+   {
+    "current": 49.49727554525768,
+    "efficiency": 65.38926082413444,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0003958333333333333,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00019791666666666666,
+    "power": 1724.5634637230219,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.099911",
+    "voltage": 35.324554930787755,
+    "water_consumed": 0.0003750000000000001
+   },
+   {
+    "current": 51.15092671146038,
+    "efficiency": 65.64651162618651,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0004222222222222222,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0002111111111111111,
+    "power": 1806.8837203796809,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.199911",
+    "voltage": 35.81744962963988,
+    "water_consumed": 0.00040000000000000013
+   },
+   {
+    "current": 52.903779394173235,
+    "efficiency": 65.92149516771369,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0004486111111111111,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00022430555555555555,
+    "power": 1894.8784536683802,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.299911",
+    "voltage": 36.319875714554236,
+    "water_consumed": 0.00042500000000000014
+   },
+   {
+    "current": 54.7617186423688,
+    "efficiency": 66.21543379689444,
+    "event_type": "normal",
+    "hydrogen_produced": 0.000475,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0002375,
+    "power": 1988.9388150062225,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.399911",
+    "voltage": 36.831173610231495,
+    "water_consumed": 0.00045000000000000015
+   },
+   {
+    "current": 56.73136948230826,
+    "efficiency": 66.52963412046589,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0005013888888888889,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00025069444444444445,
+    "power": 2089.4829185490844,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.499911",
+    "voltage": 37.35087462534934,
+    "water_consumed": 0.00047500000000000016
+   },
+   {
+    "current": 58.81944457301832,
+    "efficiency": 66.86549281181091,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0005277777777777777,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00026388888888888886,
+    "power": 2196.957699779492,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.599911",
+    "voltage": 37.87845309260976,
+    "water_consumed": 0.0005000000000000001
+   },
+   {
+    "current": 61.03313925090577,
+    "efficiency": 67.22450281940672,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0005541666666666666,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0002770833333333333,
+    "power": 2311.8409022101537,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.699911",
+    "voltage": 38.413456521980244,
+    "water_consumed": 0.0005250000000000001
+   },
+   {
+    "current": 63.37995643899603,
+    "efficiency": 67.60826000323243,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0005805555555555554,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0002902777777777777,
+    "power": 2434.643201034376,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.799911",
+    "voltage": 38.95543365883666,
+    "water_consumed": 0.00055
+   },
+   {
+    "current": 65.86781034772973,
+    "efficiency": 68.01846598829319,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0006069444444444442,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0003034722222222221,
+    "power": 2565.9091162538202,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.899910",
+    "voltage": 39.503967176605634,
+    "water_consumed": 0.000575
+   },
+   {
+    "current": 68.50513927370822,
+    "efficiency": 68.45695241655427,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0006333333333333331,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00031666666666666654,
+    "power": 2706.2247732973674,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:53.999910",
+    "voltage": 40.05866816696483,
+    "water_consumed": 0.0006
+   },
+   {
+    "current": 71.30073864644645,
+    "efficiency": 68.92566446717963,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0006597222222222219,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00032986111111111096,
+    "power": 2856.2126294974832,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.099910",
+    "voltage": 40.615449055088746,
+    "water_consumed": 0.0006249999999999999
+   },
+   {
+    "current": 74.27073875404743,
+    "efficiency": 69.42668564421506,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0006861111111111108,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0003430555555555554,
+    "power": 3016.5394061488187,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.199910",
+    "voltage": 41.175511905517915,
+    "water_consumed": 0.0006499999999999999
+   },
+   {
+    "current": 77.42266301642249,
+    "efficiency": 69.96224307121751,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0007124999999999996,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0003562499999999998,
+    "power": 3187.9177827896056,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.299910",
+    "voltage": 41.737927489751534,
+    "water_consumed": 0.0006749999999999998
+   },
+   {
+    "current": 80.76849445890763,
+    "efficiency": 70.53471739119465,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0007388888888888884,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0003694444444444442,
+    "power": 3371.109565182285,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.399910",
+    "voltage": 42.302925148659575,
+    "water_consumed": 0.0006999999999999998
+   },
+   {
+    "current": 84.31873349499375,
+    "efficiency": 71.14665334896405,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0007652777777777773,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00038263888888888863,
+    "power": 3566.9290716684955,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.499910",
+    "voltage": 42.870132004339595,
+    "water_consumed": 0.0007249999999999997
+   },
+   {
+    "current": 88.08572720441033,
+    "efficiency": 71.80077110297287,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0007916666666666661,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00039583333333333305,
+    "power": 3776.2467529513183,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.599910",
+    "voltage": 43.43951357606563,
+    "water_consumed": 0.0007499999999999997
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0008180555555555549,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00040902777777777747,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.699910",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0007749999999999996
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0008444444444444438,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0004222222222222219,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.799910",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0007999999999999996
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0008708333333333326,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0004354166666666663,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.899909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0008249999999999996
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0008972222222222215,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00044861111111111073,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:54.999909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0008499999999999995
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0009236111111111103,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00046180555555555515,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.099909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0008749999999999995
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0009499999999999991,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.00047499999999999957,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.199909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0008999999999999994
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.000976388888888888,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.000488194444444444,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.299909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0009249999999999994
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.001002777777777777,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005013888888888885,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.399909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0009499999999999993
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0010291666666666659,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005145833333333329,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.499909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0009749999999999993
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0010555555555555548,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005277777777777774,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.599909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0009999999999999994
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0010819444444444438,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005409722222222219,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.699909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0010249999999999994
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0011083333333333327,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005541666666666663,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.799909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0010499999999999995
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0011347222222222216,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005673611111111108,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.899909",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0010749999999999996
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0011611111111111106,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005805555555555553,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:55.999908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0010999999999999996
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0011874999999999995,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0005937499999999998,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.099908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0011249999999999997
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0012138888888888885,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006069444444444442,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.199908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0011499999999999998
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0012402777777777774,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006201388888888887,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.299908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0011749999999999998
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0012666666666666664,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006333333333333332,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.399908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0012
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0012930555555555553,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006465277777777777,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.499908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.001225
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0013194444444444443,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006597222222222221,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.599908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.00125
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0013458333333333332,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006729166666666666,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.699908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.001275
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0013722222222222222,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006861111111111111,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.799908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0013000000000000002
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.001398611111111111,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0006993055555555556,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.899908",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0013250000000000002
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.001425,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0007125,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:56.999907",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0013500000000000003
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.001451388888888889,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0007256944444444445,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:57.099907",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0013750000000000004
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.001477777777777778,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.000738888888888889,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:57.199907",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0014000000000000004
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0015041666666666669,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0007520833333333334,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:57.299907",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0014250000000000005
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0015305555555555558,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0007652777777777779,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:57.399907",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0014500000000000006
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0015569444444444448,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0007784722222222224,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:57.499907",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0014750000000000006
+   },
+   {
+    "current": 92.0819026757991,
+    "efficiency": 72.4999783168604,
+    "event_type": "normal",
+    "hydrogen_produced": 0.0015833333333333337,
+    "message": null,
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0007916666666666669,
+    "power": 3999.993061395329,
+    "pressure": 1.0,
+    "temperature": 25.0,
+    "timestamp": "2023-11-15T03:44:57.599907",
+    "voltage": 44.01086963259605,
+    "water_consumed": 0.0015000000000000007
+   }
+  ],
+  "json": {
+   "end_time": "2023-11-15T03:44:57.599907",
+   "events": [
+    {
+     "current": 0.0,
+     "efficiency": 63.125,
+     "event_type": "normal",
+     "hydrogen_produced": 2.638888888888889e-05,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 1.3194444444444444e-05,
+     "power": 1000.0,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:51.699913",
+     "voltage": 30.0,
+     "water_consumed": 2.5e-05
+    },
+    {
+     "current": 34.41248394653336,
+     "efficiency": 63.2261703699875,
+     "event_type": "normal",
+     "hydrogen_produced": 5.277777777777778e-05,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 2.638888888888889e-05,
+     "power": 1032.3745183960007,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:51.799912",
+     "voltage": 30.0,
+     "water_consumed": 5e-05
+    },
+    {
+     "current": 35.56603341965414,
+     "efficiency": 63.33431563309257,
+     "event_type": "normal",
+     "hydrogen_produced": 7.916666666666666e-05,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 3.958333333333333e-05,
+     "power": 1066.9810025896243,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:51.899912",
+     "voltage": 30.451799388,
+     "water_consumed": 7.500000000000001e-05
+    },
+    {
+     "current": 36.2531276753303,
+     "efficiency": 63.449915534864715,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00010555555555555555,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 5.277777777777778e-05,
+     "power": 1103.972971156709,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:51.999912",
+     "voltage": 30.693867337812,
+     "water_consumed": 0.0001
+    },
+    {
+     "current": 37.255483222285186,
+     "efficiency": 63.57348393634657,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00013194444444444443,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 6.597222222222222e-05,
+     "power": 1143.5148596309023,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.099912",
+     "voltage": 31.07830033839899,
+     "water_consumed": 0.000125
+    },
+    {
+     "current": 38.154674659103335,
+     "efficiency": 63.705570119904735,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00015833333333333332,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 7.916666666666666e-05,
+     "power": 1185.7824383695145,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.199912",
+     "voltage": 31.415029207201385,
+     "water_consumed": 0.00015000000000000001
+    },
+    {
+     "current": 39.18390735095031,
+     "efficiency": 63.84676123088243,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00018472222222222222,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 9.236111111111111e-05,
+     "power": 1230.963593882377,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.299912",
+     "voltage": 31.804122219808637,
+     "water_consumed": 0.00017500000000000003
+    },
+    {
+     "current": 40.22306150057093,
+     "efficiency": 63.997684887559494,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0002111111111111111,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00010555555555555555,
+     "power": 1279.2591640190371,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.399912",
+     "voltage": 32.19051973103293,
+     "water_consumed": 0.00020000000000000004
+    },
+    {
+     "current": 41.34396840582288,
+     "efficiency": 64.15901197102139,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0002375,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00011875,
+     "power": 1330.8838307268434,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.499912",
+     "voltage": 32.60223471609523,
+     "water_consumed": 0.00022500000000000005
+    },
+    {
+     "current": 42.51448056915233,
+     "efficiency": 64.33145960733867,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00026388888888888886,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00013194444444444443,
+     "power": 1386.0670743483743,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.599912",
+     "voltage": 33.02291722501621,
+     "water_consumed": 0.00025000000000000006
+    },
+    {
+     "current": 43.759131994721066,
+     "efficiency": 64.51579435531323,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00029027777777777776,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00014513888888888888,
+     "power": 1445.0541937002322,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.699912",
+     "voltage": 33.46002479789073,
+     "water_consumed": 0.00027500000000000007
+    },
+    {
+     "current": 45.071895606659986,
+     "efficiency": 64.7128335771462,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00031666666666666665,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00015833333333333332,
+     "power": 1508.1067446867855,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.799911",
+     "voltage": 33.90834544470314,
+     "water_consumed": 0.0003000000000000001
+    },
+    {
+     "current": 46.46367280355093,
+     "efficiency": 64.92345708766395,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00034305555555555554,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00017152777777777777,
+     "power": 1575.5062680524632,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.899911",
+     "voltage": 34.36952213242066,
+     "water_consumed": 0.0003250000000000001
+    },
+    {
+     "current": 47.93641732748973,
+     "efficiency": 65.1485992383941,
+     "event_type": "normal",
+     "hydrogen_produced": 0.00036944444444444443,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00018472222222222222,
+     "power": 1647.5517562861116,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:52.999911",
+     "voltage": 34.841583596781454,
+     "water_consumed": 0.0003500000000000001
+    },
+    {
+     "current": 49.49727554525768,
+     "efficiency": 65.38926082413444,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0003958333333333333,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00019791666666666666,
+     "power": 1724.5634637230219,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.099911",
+     "voltage": 35.324554930787755,
+     "water_consumed": 0.0003750000000000001
+    },
+    {
+     "current": 51.15092671146038,
+     "efficiency": 65.64651162618651,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0004222222222222222,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0002111111111111111,
+     "power": 1806.8837203796809,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.199911",
+     "voltage": 35.81744962963988,
+     "water_consumed": 0.00040000000000000013
+    },
+    {
+     "current": 52.903779394173235,
+     "efficiency": 65.92149516771369,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0004486111111111111,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00022430555555555555,
+     "power": 1894.8784536683802,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.299911",
+     "voltage": 36.319875714554236,
+     "water_consumed": 0.00042500000000000014
+    },
+    {
+     "current": 54.7617186423688,
+     "efficiency": 66.21543379689444,
+     "event_type": "normal",
+     "hydrogen_produced": 0.000475,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0002375,
+     "power": 1988.9388150062225,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.399911",
+     "voltage": 36.831173610231495,
+     "water_consumed": 0.00045000000000000015
+    },
+    {
+     "current": 56.73136948230826,
+     "efficiency": 66.52963412046589,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0005013888888888889,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00025069444444444445,
+     "power": 2089.4829185490844,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.499911",
+     "voltage": 37.35087462534934,
+     "water_consumed": 0.00047500000000000016
+    },
+    {
+     "current": 58.81944457301832,
+     "efficiency": 66.86549281181091,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0005277777777777777,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00026388888888888886,
+     "power": 2196.957699779492,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.599911",
+     "voltage": 37.87845309260976,
+     "water_consumed": 0.0005000000000000001
+    },
+    {
+     "current": 61.03313925090577,
+     "efficiency": 67.22450281940672,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0005541666666666666,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0002770833333333333,
+     "power": 2311.8409022101537,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.699911",
+     "voltage": 38.413456521980244,
+     "water_consumed": 0.0005250000000000001
+    },
+    {
+     "current": 63.37995643899603,
+     "efficiency": 67.60826000323243,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0005805555555555554,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0002902777777777777,
+     "power": 2434.643201034376,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.799911",
+     "voltage": 38.95543365883666,
+     "water_consumed": 0.00055
+    },
+    {
+     "current": 65.86781034772973,
+     "efficiency": 68.01846598829319,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0006069444444444442,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0003034722222222221,
+     "power": 2565.9091162538202,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.899910",
+     "voltage": 39.503967176605634,
+     "water_consumed": 0.000575
+    },
+    {
+     "current": 68.50513927370822,
+     "efficiency": 68.45695241655427,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0006333333333333331,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00031666666666666654,
+     "power": 2706.2247732973674,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:53.999910",
+     "voltage": 40.05866816696483,
+     "water_consumed": 0.0006
+    },
+    {
+     "current": 71.30073864644645,
+     "efficiency": 68.92566446717963,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0006597222222222219,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00032986111111111096,
+     "power": 2856.2126294974832,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.099910",
+     "voltage": 40.615449055088746,
+     "water_consumed": 0.0006249999999999999
+    },
+    {
+     "current": 74.27073875404743,
+     "efficiency": 69.42668564421506,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0006861111111111108,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0003430555555555554,
+     "power": 3016.5394061488187,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.199910",
+     "voltage": 41.175511905517915,
+     "water_consumed": 0.0006499999999999999
+    },
+    {
+     "current": 77.42266301642249,
+     "efficiency": 69.96224307121751,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0007124999999999996,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0003562499999999998,
+     "power": 3187.9177827896056,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.299910",
+     "voltage": 41.737927489751534,
+     "water_consumed": 0.0006749999999999998
+    },
+    {
+     "current": 80.76849445890763,
+     "efficiency": 70.53471739119465,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0007388888888888884,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0003694444444444442,
+     "power": 3371.109565182285,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.399910",
+     "voltage": 42.302925148659575,
+     "water_consumed": 0.0006999999999999998
+    },
+    {
+     "current": 84.31873349499375,
+     "efficiency": 71.14665334896405,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0007652777777777773,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00038263888888888863,
+     "power": 3566.9290716684955,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.499910",
+     "voltage": 42.870132004339595,
+     "water_consumed": 0.0007249999999999997
+    },
+    {
+     "current": 88.08572720441033,
+     "efficiency": 71.80077110297287,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0007916666666666661,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00039583333333333305,
+     "power": 3776.2467529513183,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.599910",
+     "voltage": 43.43951357606563,
+     "water_consumed": 0.0007499999999999997
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0008180555555555549,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00040902777777777747,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.699910",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0007749999999999996
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0008444444444444438,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0004222222222222219,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.799910",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0007999999999999996
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0008708333333333326,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0004354166666666663,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.899909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0008249999999999996
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0008972222222222215,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00044861111111111073,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:54.999909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0008499999999999995
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0009236111111111103,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00046180555555555515,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.099909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0008749999999999995
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0009499999999999991,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.00047499999999999957,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.199909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0008999999999999994
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.000976388888888888,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.000488194444444444,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.299909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0009249999999999994
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.001002777777777777,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005013888888888885,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.399909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0009499999999999993
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0010291666666666659,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005145833333333329,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.499909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0009749999999999993
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0010555555555555548,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005277777777777774,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.599909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0009999999999999994
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0010819444444444438,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005409722222222219,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.699909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0010249999999999994
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0011083333333333327,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005541666666666663,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.799909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0010499999999999995
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0011347222222222216,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005673611111111108,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.899909",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0010749999999999996
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0011611111111111106,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005805555555555553,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:55.999908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0010999999999999996
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0011874999999999995,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0005937499999999998,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.099908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0011249999999999997
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0012138888888888885,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006069444444444442,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.199908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0011499999999999998
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0012402777777777774,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006201388888888887,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.299908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0011749999999999998
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0012666666666666664,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006333333333333332,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.399908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0012
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0012930555555555553,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006465277777777777,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.499908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.001225
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0013194444444444443,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006597222222222221,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.599908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.00125
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0013458333333333332,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006729166666666666,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.699908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.001275
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0013722222222222222,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006861111111111111,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.799908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0013000000000000002
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.001398611111111111,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0006993055555555556,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.899908",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0013250000000000002
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.001425,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0007125,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:56.999907",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0013500000000000003
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.001451388888888889,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0007256944444444445,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:57.099907",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0013750000000000004
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.001477777777777778,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.000738888888888889,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:57.199907",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0014000000000000004
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0015041666666666669,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0007520833333333334,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:57.299907",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0014250000000000005
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0015305555555555558,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0007652777777777779,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:57.399907",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0014500000000000006
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0015569444444444448,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0007784722222222224,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:57.499907",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0014750000000000006
+    },
+    {
+     "current": 92.0819026757991,
+     "efficiency": 72.4999783168604,
+     "event_type": "normal",
+     "hydrogen_produced": 0.0015833333333333337,
+     "message": null,
+     "mode": "NORMAL",
+     "oxygen_produced": 0.0007916666666666669,
+     "power": 3999.993061395329,
+     "pressure": 1.0,
+     "temperature": 25.0,
+     "timestamp": "2023-11-15T03:44:57.599907",
+     "voltage": 44.01086963259605,
+     "water_consumed": 0.0015000000000000007
+    }
+   ],
+   "start_time": "2023-11-15T03:44:51.699913",
+   "total_events": 60
+  },
+  "summary": {
+   "alerts": 0,
+   "current_avg": 72.49021789984921,
+   "current_max": 92.0819026757991,
+   "current_min": 0.0,
+   "duration_seconds": 5.899994,
+   "efficiency_avg": 69.34536919426273,
+   "power_avg": 2990.518142164074,
+   "power_max": 3999.993061395329,
+   "power_min": 1000.0,
+   "total_events": 60,
+   "total_hydrogen": 0.0015833333333333337,
+   "total_oxygen": 0.0007916666666666669,
+   "total_water_consumed": 0.0015000000000000007,
+   "voltage_avg": 39.97932869033376,
+   "voltage_max": 44.01086963259605,
+   "voltage_min": 30.0,
+   "warnings": 0
+  }
+ },
+ "interlocks": [
+  false,
+  true,
+  false,
+  false,
+  true,
+  true
+ ],
+ "inverter": [
+  false,
+  true,
+  true,
+  false,
+  false,
+  true,
+  true,
+  false
+ ],
+ "pid": {
+  "AEM": [
+   [
+    27.929723802030768,
+    0.0,
+    30.07808466441026
+   ],
+   [
+    29.201066062084394,
+    2.696714688147989,
+    26.967146881479888
+   ],
+   [
+    29.88535358343766,
+    5.123254358054859,
+    24.2653966990687
+   ],
+   [
+    32.692045673955825,
+    7.536308548114308,
+    24.13054190059449
+   ],
+   [
+    34.11428669214401,
+    9.765833721808516,
+    22.29525173694207
+   ],
+   [
+    35.22842969047109,
+    10,
+    21.0852189735511
+   ],
+   [
+    36.58163317816099,
+    10,
+    19.939393337658643
+   ],
+   [
+    38.29284067684068,
+    10,
+    18.674621470177016
+   ],
+   [
+    39.01700286332956,
+    10,
+    16.86421600395483
+   ],
+   [
+    39.24132538063539,
+    10,
+    14.458360496533906
+   ],
+   [
+    40.38659391816961,
+    10,
+    13.731628964047765
+   ],
+   [
+    41.50258558393293,
+    10,
+    12.341728532400374
+   ],
+   [
+    43.39428745829959,
+    10,
+    13.068746723880302
+   ],
+   [
+    43.727165859046686,
+    10,
+    11.797516615676543
+   ],
+   [
+    45.274565056861164,
+    10,
+    10.917149936820927
+   ],
+   [
+    45.58704912036646,
+    10,
+    9.500925248291537
+   ],
+   [
+    46.42932969350587,
+    10,
+    9.800519205870899
+   ],
+   [
+    45.984935990471996,
+    10,
+    7.449686581232001
+   ],
+   [
+    47.92470352726051,
+    10,
+    8.508887612220207
+   ],
+   [
+    48.196989689689204,
+    10,
+    6.621416260501732
+   ],
+   [
+    49.07488706695771,
+    10,
+    6.7860120069785665
+   ],
+   [
+    49.835308223492824,
+    10,
+    5.849657529452415
+   ],
+   [
+    50.198667637331674,
+    10,
+    4.941258994855296
+   ],
+   [
+    50.555023835259256,
+    10,
+    5.185866668282735
+   ],
+   [
+    50.8558916497844,
+    10,
+    4.127937540185592
+   ],
+   [
+    50.91188836232145,
+    10,
+    3.2531685467344147
+   ],
+   [
+    51.09831667397801,
+    10,
+    3.3353239574451905
+   ],
+   [
+    51.73531664064599,
+    10,
+    4.242553451578544
+   ],
+   [
+    52.425982656090376,
+    10,
+    2.9711303821218067
+   ],
+   [
+    52.66038280197227,
+    10,
+    2.385130017417069
+   ],
+   [
+    52.92198235010389,
+    10,
+    2.4636316029689453
+   ],
+   [
+    51.86416192084656,
+    10,
+    0.8786190185750726
+   ],
+   [
+    53.25758513748882,
+    10,
+    3.507763383059107
+   ],
+   [
+    52.491418213630375,
+    10,
+    2.1367502371001734
+   ],
+   [
+    52.99022063652626,
+    10,
+    2.6035106123091367
+   ],
+   [
+    52.95183898601988,
+    10,
+    2.386845571089019
+   ],
+   [
+    52.955706831224546,
+    10,
+    2.377175958077352
+   ],
+   [
+    51.89570470261782,
+    10,
+    0.2090271459809685
+   ],
+   [
+    53.94318835520959,
+    10,
+    2.6307451794998045
+   ],
+   [
+    53.522232947137155,
+    10,
+    0.6559861577823582
+   ],
+   [
+    54.07105492073949,
+    10,
+    1.752380000923317
+   ],
+   [
+    52.8125953096992,
+    9.910227802787302,
+    -0.8977219721269734
+   ],
+   [
+    52.79057325686739,
+    9.910227802787302,
+    2.2174070813638167
+   ],
+   [
+    52.979988941867454,
+    10,
+    2.5282687936265944
+   ],
+   [
+    52.623091322484726,
+    10,
+    1.4826537550317838
+   ],
+   [
+    53.39601706133419,
+    10,
+    2.406640152874793
+   ],
+   [
+    53.08568235280996,
+    10,
+    2.027493926881604
+   ],
+   [
+    53.209584245272666,
+    10,
+    2.191671978216334
+   ],
+   [
+    52.16517654321132,
+    10,
+    0.44052928075753783
+   ],
+   [
+    52.285135024418054,
+    10,
+    3.127627750646603
+   ],
+   [
+    52.25692041005105,
+    10,
+    3.198164286564122
+   ],
+   [
+    52.27378508795042,
+    10,
+    2.8745749022976668
+   ],
+   [
+    52.42977287458863,
+    10,
+    3.082349185656348
+   ],
+   [
+    52.48984923444853,
+    10,
+    2.6724404318082406
+   ],
+   [
+    52.43159770811644,
+    10,
+    2.5143557050094927
+   ],
+   [
+    52.07622871115972,
+    10,
+    2.078191569073887
+   ],
+   [
+    52.31457359322786,
+    10,
+    2.979637494675373
+   ],
+   [
+    51.35739900745814,
+    10,
+    1.277858683131278
+   ],
+   [
+    53.112475036975475,
+    10,
+    3.3714890536472097
+   ],
+   [
+    52.649102970014425,
+    10,
+    1.1668965506419298
+   ],
+   [
+    53.43379029034077,
+    10,
+    2.70690358584568
+   ],
+   [
+    53.103159400566156,
+    10,
+    1.6084720162775028
+   ],
+   [
+    53.47794162853402,
+    10,
+    2.044555908318081
+   ],
+   [
+    54.05995816988496,
+    10,
+    1.1556020334611574
+   ],
+   [
+    54.264979703480655,
+    10,
+    0.643048199471913
+   ],
+   [
+    54.48529577229244,
+    10,
+    0.7329503199290102
+   ],
+   [
+    53.34205616310987,
+    9.902763230910534,
+    -0.9723676908946643
+   ],
+   [
+    54.96641881106365,
+    10,
+    1.5494125859592032
+   ],
+   [
+    54.32356820821908,
+    10,
+    0.004313747003301671
+   ],
+   [
+    54.63182053047333,
+    10,
+    1.165056490062554
+   ],
+   [
+    54.2599658794736,
+    10,
+    -0.9413473102300998
+   ],
+   [
+    55.0,
+    10,
+    0.3099389260226104
+   ],
+   [
+    55.0,
+    9.95141348736254,
+    -0.48586512637459833
+   ],
+   [
+    54.6053392361582,
+    9.842123127065735,
+    -1.0929036029680574
+   ],
+   [
+    55.0,
+    9.729201860838005,
+    -1.129212662277304
+   ],
+   [
+    55.0,
+    9.702566540050919,
+    -0.26635320787087124
+   ],
+   [
+    54.77294497497657,
+    9.543982635553506,
+    -1.5858390449741222
+   ],
+   [
+    54.441917181478004,
+    9.543982635553506,
+    0.7261362720861442
+   ],
+   [
+    54.35409351037826,
+    9.638789196940523,
+    0.9480656138701704
+   ],
+   [
+    54.492477664259575,
+    9.671339928964269,
+    0.325507320237449
+   ],
+   [
+    54.60354313203974,
+    9.754151108696394,
+    0.8281117973212488
+   ],
+   [
+    54.36866157672823,
+    9.786256294548798,
+    0.3210518585240294
+   ],
+   [
+    54.738869282411,
+    9.835997485343903,
+    0.4974119079510544
+   ],
+   [
+    54.67983101851183,
+    9.83888129397684,
+    0.028838086329379564
+   ],
+   [
+    54.99257448619195,
+    9.83888129397684,
+    -0.9643135866566865
+   ],
+   [
+    55.0,
+    9.793626599250295,
+    -0.4525469472654393
+   ],
+   [
+    55.0,
+    9.769949557817206,
+    -0.2367704143308984
+   ],
+   [
+    54.975690654678054,
+    9.65469117472373,
+    -1.152583830934752
+   ],
+   [
+    54.89760451148339,
+    9.599758586518494,
+    -0.5493258820523579
+   ],
+   [
+    55.0,
+    9.560034259149507,
+    -0.3972432736898597
+   ],
+   [
+    55.0,
+    9.562878991697222,
+    0.02844732547714557
+   ],
+   [
+    54.75494626839189,
+    9.562878991697222,
+    0.3785361350278649
+   ],
+   [
+    54.723727711865344,
+    9.60865167604251,
+    0.4577268434528676
+   ],
+   [
+    54.64812183946831,
+    9.663564271422379,
+    0.5491259537986934
+   ],
+   [
+    53.58308412473657,
+    9.578030690417132,
+    -0.8553358100524804
+   ],
+   [
+    54.4637357683757,
+    9.57917024211677,
+    0.0113955169963873
+   ],
+   [
+    54.84893262924465,
+    9.639611674366977,
+    0.6044143225020591
+   ],
+   [
+    54.70922770056707,
+    9.66090522196737,
+    0.21293547600394191
+   ],
+   [
+    54.74144133270841,
+    9.66090522196737,
+    0.3946307994569551
+   ],
+   [
+    54.88329936396353,
+    9.664913815583326,
+    0.04008593615955647
+   ],
+   [
+    36.83418256798886,
+    6.718152813600167,
+    -29.46761001983159
+   ],
+   [
+    44.349354435256835,
+    5.578210984726723,
+    -11.399418288734438
+   ],
+   [
+    38.41946856937109,
+    3.6574146651386004,
+    -19.20796319588122
+   ],
+   [
+    39.91776939657296,
+    2.334804727298761,
+    -13.226099378398395
+   ],
+   [
+    38.83054540494703,
+    1.005563986084627,
+    -13.292407412141337
+   ],
+   [
+    37.24777071650654,
+    1.005563986084627,
+    -13.186319153819454
+   ],
+   [
+    36.54761682932298,
+    -0.2336344130513155,
+    -12.391983991359425
+   ],
+   [
+    35.64593876266747,
+    -1.3494948419030117,
+    -11.158604288516962
+   ],
+   [
+    34.725497003474665,
+    -2.392023615746423,
+    -10.425287738434115
+   ],
+   [
+    34.14004196672101,
+    -3.3823289625287316,
+    -9.903053467823085
+   ],
+   [
+    33.9232974397537,
+    -4.236433737635965,
+    -8.541047751072327
+   ],
+   [
+    34.00037467861731,
+    -4.973465123153501,
+    -7.3703138551753575
+   ],
+   [
+    32.629484990657886,
+    -4.973465123153501,
+    -8.532466268766022
+   ],
+   [
+    32.52171217400405,
+    -5.71298354300847,
+    -7.395184198549693
+   ],
+   [
+    31.629025630404076,
+    -6.461996918085992,
+    -7.490133750775222
+   ],
+   [
+    31.536635984002785,
+    -7.156413683440955,
+    -6.944167653549627
+   ],
+   [
+    31.107124421392886,
+    -7.834760733930299,
+    -6.78347050489344
+   ],
+   [
+    31.33990229664532,
+    -8.426088244567909,
+    -5.913275106376098
+   ],
+   [
+    30.598187409398058,
+    -9.109248830697155,
+    -6.831605861292452
+   ],
+   [
+    30.012074014515242,
+    -9.109248830697155,
+    -4.518560711573219
+   ],
+   [
+    30.13451631414532,
+    -9.442658097937315,
+    -3.334092672401603
+   ],
+   [
+    29.704764330339763,
+    -9.760214630567216,
+    -3.175565326299001
+   ],
+   [
+    28.52505048121406,
+    -10,
+    -5.093169545161398
+   ],
+   [
+    28.876480620712368,
+    -10,
+    -3.574739620329172
+   ],
+   [
+    28.22460045556669,
+    -10,
+    -3.8430766135052643
+   ],
+   [
+    28.14664184560874,
+    -10,
+    -3.3127588471402696
+   ],
+   [
+    27.976185551130946,
+    -10,
+    -3.417983945701053
+   ],
+   [
+    27.954739745814127,
+    -10,
+    -3.3643694324090028
+   ],
+   [
+    27.97394393154616,
+    -10,
+    -2.5528333598509256
+   ],
+   [
+    27.81843313480415,
+    -10,
+    -1.4030290245814854
+   ],
+   [
+    26.707944687209462,
+    -10,
+    -2.7660754372967986
+   ],
+   [
+    26.968206255359316,
+    -10,
+    -1.6516775864203055
+   ],
+   [
+    26.393846570854546,
+    -10,
+    -1.667108361921347
+   ],
+   [
+    25.931161437564676,
+    -10,
+    0.2798334094606538
+   ],
+   [
+    25.06334414937397,
+    -10,
+    -0.7581521352607474
+   ],
+   [
+    25.88805091924893,
+    -9.92079891342422,
+    0.7920108657578133
+   ],
+   [
+    25.98244702529677,
+    -9.808083932574307,
+    1.1271498084991123
+   ],
+   [
+    25.0,
+    -9.857281988420068,
+    -0.4919805584576089
+   ],
+   [
+    26.044321486982238,
+    -9.740555275731476,
+    1.1672671268859176
+   ],
+   [
+    25.522527148001334,
+    -9.654589626796117,
+    0.8596564893535934
+   ],
+   [
+    25.057923982834012,
+    -9.654589626796117,
+    -0.1716331990021942
+   ],
+   [
+    25.20515099529164,
+    -9.70869496315163,
+    -0.5410533635551467
+   ],
+   [
+    25.3599748857223,
+    -9.755445628208333,
+    -0.4675066505670209
+   ],
+   [
+    26.385565605064002,
+    -9.656791024071074,
+    0.9865460413725984
+   ],
+   [
+    25.0,
+    -9.763877417929814,
+    -1.0708639385873973
+   ],
+   [
+    25.5215520103505,
+    -9.690023850617612,
+    0.7385356731220298
+   ],
+   [
+    25.55238809436198,
+    -9.644582477622423,
+    0.45441372995188445
+   ],
+   [
+    25.158536590559407,
+    -9.644582477622423,
+    -0.2833137948173672
+   ],
+   [
+    26.439761019182125,
+    -9.494406473605812,
+    1.5017600401661078
+   ],
+   [
+    25.859330038264474,
+    -9.435839791576855,
+    0.5856668202895747
+   ],
+   [
+    26.182594761401838,
+    -9.3661890986614,
+    0.6965069291545625
+   ],
+   [
+    25.0,
+    -9.465817491694425,
+    -0.9962839303302538
+   ],
+   [
+    25.263453264996027,
+    -9.430722121957043,
+    0.350953697373825
+   ],
+   [
+    25.580712887001848,
+    -9.328467697790682,
+    1.0225442416636135
+   ],
+   [
+    25.115263584669,
+    -9.328467697790682,
+    -0.23172029071878697
+   ],
+   [
+    25.0,
+    -9.311090108631914,
+    0.17377589158767393
+   ],
+   [
+    25.0,
+    -9.291120753421776,
+    0.19969355210138673
+   ],
+   [
+    25.0,
+    -9.283204622904044,
+    0.07916130517732256
+   ],
+   [
+    25.0,
+    -9.291680603707976,
+    -0.08475980803931904
+   ],
+   [
+    25.735712571114423,
+    -9.242453504587711,
+    0.4922709912026484
+   ],
+   [
+    25.0,
+    -9.268695874810101,
+    -0.262423702223888
+   ],
+   [
+    25.397824111504036,
+    -9.268695874810101,
+    1.1202703478488552
+   ],
+   [
+    25.0,
+    -9.31399450610038,
+    -0.4529863129027909
+   ],
+   [
+    25.226066218558266,
+    -9.337230848748971,
+    -0.2323634264859038
+   ],
+   [
+    26.07857135704667,
+    -9.116656294882628,
+    2.205745538663443
+   ],
+   [
+    25.0,
+    -9.233891938594853,
+    -1.1723564371222537
+   ],
+   [
+    26.728525361812906,
+    -9.04312767141802,
+    1.9076426717683255
+   ],
+   [
+    25.0,
+    -9.22388352523656,
+    -1.8075585381854111
+   ],
+   [
+    25.0,
+    -9.22388352523656,
+    0.3896300943158586
+   ],
+   [
+    26.05394634349615,
+    -9.079266215658437,
+    1.4461730957812264
+   ],
+   [
+    25.0,
+    -9.16910680227073,
+    -0.8984058661229248
+   ],
+   [
+    25.208571992540286,
+    -9.131778513423995,
+    0.3732828884673438
+   ],
+   [
+    25.0,
+    -9.108187680409355,
+    0.23590833014640467
+   ],
+   [
+    25.123074621607607,
+    -8.991005943680467,
+    1.1718173672888774
+   ],
+   [
+    25.0,
+    -8.826433433333115,
+    1.64572510347352
+   ],
+   [
+    25.0,
+    -8.826433433333115,
+    0.018169662221147576
+   ],
+   [
+    25.0,
+    -8.787939026591772,
+    0.38494406741342857
+   ],
+   [
+    25.0,
+    -8.815367355128794,
+    -0.27428328537022395
+   ],
+   [
+    25.0,
+    -8.778777850630304,
+    0.3658950449848959
+   ],
+   [
+    25.361173880979408,
+    -8.641589997204763,
+    1.3718785342554085
+   ],
+   [
+    25.0,
+    -8.705483181093102,
+    -0.6389318388834013
+   ],
+   [
+    25.2783649598892,
+    -8.717000442310754,
+    -0.11517261217651864
+   ],
+   [
+    25.0,
+    -8.717000442310754,
+    0.6894837665043916
+   ],
+   [
+    25.0,
+    -8.685332207892467,
+    0.31668234418287966
+   ],
+   [
+    25.0,
+    -8.69012632073998,
+    -0.04794112847513432
+   ],
+   [
+    25.0,
+    -8.699330662327574,
+    -0.09204341587594556
+   ],
+   [
+    25.25290640824665,
+    -8.67705554215243,
+    0.2227512017514286
+   ],
+   [
+    25.585966630659524,
+    -8.545047060545205,
+    1.3200848160722636
+   ],
+   [
+    25.0,
+    -8.57949788688964,
+    -0.3445082634443608
+   ],
+   [
+    25.0,
+    -8.57949788688964,
+    0.04399259297447955
+   ],
+   [
+    25.953909085569286,
+    -8.35654042779157,
+    2.229574590980704
+   ],
+   [
+    25.0,
+    -8.398114085951416,
+    -0.4157365815984555
+   ],
+   [
+    26.09599231414883,
+    -8.192305054827179,
+    2.0580903112423776
+   ],
+   [
+    25.0,
+    -8.146579423974888,
+    0.45725630852290067
+   ],
+   [
+    25.0,
+    -8.176657862218093,
+    -0.3007843824320524
+   ],
+   [
+    25.54308213579664,
+    -8.122944595231237,
+    0.5371326698685621
+   ],
+   [
+    25.758533237172127,
+    -8.122944595231237,
+    -0.9330696479160423
+   ],
+   [
+    25.737972890388928,
+    -8.21133244294633,
+    -0.8838784771509296
+   ],
+   [
+    25.5176602197271,
+    -8.250889913016781,
+    -0.3955747007045112
+   ],
+   [
+    25.449885302489427,
+    -8.334751279249197,
+    -0.8386136623241569
+   ]
+  ],
+  "ALKALINE": [
+   [
+    19.71916341184765,
+    0.0,
+    13.645373986835946
+   ],
+   [
+    20.343729278385656,
+    1.2114244932822986,
+    12.114244932822984
+   ],
+   [
+    21.124430220912714,
+    2.422091550327065,
+    12.106670570447658
+   ],
+   [
+    21.8119756451815,
+    3.464424879925546,
+    10.423333295984811
+   ],
+   [
+    22.939577609081063,
+    4.437708085871858,
+    9.73283205946312
+   ],
+   [
+    23.759825518865163,
+    5.294383657867344,
+    8.56675571995487
+   ],
+   [
+    24.472441164900395,
+    6.120730728469059,
+    8.263470706017152
+   ],
+   [
+    25.22045311423379,
+    6.120730728469059,
+    7.600837992278777
+   ],
+   [
+    25.474105910542843,
+    6.819147370224062,
+    6.984166417550025
+   ],
+   [
+    25.879692315446977,
+    7.4949408412717435,
+    6.7579347104768175
+   ],
+   [
+    26.09655771864878,
+    8.146425636892177,
+    6.514847956204338
+   ],
+   [
+    26.307894256997507,
+    8.777038674804269,
+    6.306130379120912
+   ],
+   [
+    26.517910392674,
+    9.382751658391633,
+    6.057129835873646
+   ],
+   [
+    26.88114117657522,
+    9.930150511041226,
+    5.473988526495926
+   ],
+   [
+    27.251502356399367,
+    9.930150511041226,
+    5.386443498567829
+   ],
+   [
+    27.53832963727792,
+    10,
+    4.671121533595418
+   ],
+   [
+    27.83126901076066,
+    10,
+    4.83292555610408
+   ],
+   [
+    28.045708179050006,
+    10,
+    4.094572607244885
+   ],
+   [
+    28.47350774049509,
+    10,
+    3.948014889706169
+   ],
+   [
+    28.894066335421286,
+    10,
+    3.0798155493140698
+   ],
+   [
+    29.35340515057732,
+    10,
+    3.016717686914113
+   ],
+   [
+    29.44712232133449,
+    10,
+    2.9476418651839005
+   ],
+   [
+    29.695570656577665,
+    10,
+    2.3265210270759624
+   ],
+   [
+    29.89862315771741,
+    10,
+    2.5952908218615214
+   ],
+   [
+    30.0518507722212,
+    10,
+    1.8762595421200956
+   ],
+   [
+    30.49725238029293,
+    10,
+    1.661544621617555
+   ],
+   [
+    30.58819772142044,
+    10,
+    1.7025749194269615
+   ],
+   [
+    30.665073366123167,
+    10,
+    1.4590979354083764
+   ],
+   [
+    31.038539194262533,
+    10,
+    1.1794008952638535
+   ],
+   [
+    30.93803889264371,
+    10,
+    1.4306516493109065
+   ],
+   [
+    30.92298588383554,
+    10,
+    1.1542207287725184
+   ],
+   [
+    31.06530867758336,
+    10,
+    1.143952395075953
+   ],
+   [
+    30.98789159511808,
+    10,
+    1.3503305183598613
+   ],
+   [
+    30.858747905748615,
+    10,
+    1.4152170876786343
+   ],
+   [
+    30.855390148769033,
+    10,
+    1.3425032684791276
+   ],
+   [
+    30.774297245015877,
+    10,
+    1.473003061093472
+   ],
+   [
+    30.972681683782486,
+    10,
+    0.9770419641769443
+   ],
+   [
+    31.379291959866197,
+    10,
+    0.5804676451133268
+   ],
+   [
+    31.630410313758734,
+    10,
+    0.4483896592115073
+   ],
+   [
+    31.820438612312653,
+    10,
+    0.13841639520398274
+   ],
+   [
+    31.924106715266976,
+    10,
+    0.2667127178275841
+   ],
+   [
+    32.0,
+    9.984483020652528,
+    -0.1551697934747267
+   ],
+   [
+    32.0,
+    9.984483020652528,
+    -0.4523253991077141
+   ],
+   [
+    32.0,
+    9.961740555714936,
+    -0.22742464937591933
+   ],
+   [
+    32.0,
+    9.996683112952335,
+    0.34942557237397764
+   ],
+   [
+    31.918247667435896,
+    9.998439097289838,
+    0.01755984337503591
+   ],
+   [
+    32.0,
+    9.982113781474608,
+    -0.16325315815230823
+   ],
+   [
+    32.0,
+    9.98402465910163,
+    0.019108776270229555
+   ],
+   [
+    32.0,
+    9.936542267638986,
+    -0.47482391462644813
+   ],
+   [
+    32.0,
+    9.936542267638986,
+    0.067931328487429
+   ],
+   [
+    32.0,
+    9.916879444949645,
+    -0.1966282268934023
+   ],
+   [
+    32.0,
+    9.922328606722582,
+    0.05449161772937572
+   ],
+   [
+    31.97896125172426,
+    9.945640943935182,
+    0.23312337212600553
+   ],
+   [
+    31.946850326280437,
+    9.954674627417866,
+    0.09033683482684651
+   ],
+   [
+    31.99035328485962,
+    9.970721004360506,
+    0.16046376942640705
+   ],
+   [
+    32.0,
+    9.923126090968374,
+    -0.47594913392131133
+   ],
+   [
+    32.0,
+    9.923126090968374,
+    -0.3313716264833033
+   ],
+   [
+    32.0,
+    9.956254712472196,
+    0.33128621503822586
+   ],
+   [
+    31.97932324022947,
+    9.9448753138196,
+    -0.11379398652596251
+   ],
+   [
+    32.0,
+    9.965666597233216,
+    0.20791283413616668
+   ],
+   [
+    32.0,
+    9.940303876958545,
+    -0.25362720274671346
+   ],
+   [
+    32.0,
+    9.903514544128328,
+    -0.36789332830216637
+   ],
+   [
+    32.0,
+    9.94061004278634,
+    0.37095498658012005
+   ],
+   [
+    31.95800471408424,
+    9.94061004278634,
+    0.1571126514929162
+   ],
+   [
+    31.96908300790357,
+    9.953584169798328,
+    0.129741270119883
+   ],
+   [
+    31.826128269459243,
+    10,
+    0.5225027387020411
+   ],
+   [
+    31.80892976906702,
+    10,
+    0.07454715395489941
+   ],
+   [
+    31.864293653051558,
+    10,
+    0.49608192492748415
+   ],
+   [
+    31.69861951654084,
+    10,
+    0.3833488024885412
+   ],
+   [
+    31.75099913495532,
+    10,
+    0.39331615950102616
+   ],
+   [
+    32.0,
+    10,
+    0.05023704577912724
+   ],
+   [
+    32.0,
+    9.95904143378984,
+    -0.4095856621015912
+   ],
+   [
+    32.0,
+    9.942420955126275,
+    -0.16620478663565308
+   ],
+   [
+    32.0,
+    9.902428060795447,
+    -0.3999289433082822
+   ],
+   [
+    32.0,
+    9.868789617339988,
+    -0.33638443455459566
+   ],
+   [
+    32.0,
+    9.897407768344175,
+    0.2861815100418603
+   ],
+   [
+    31.907744036644903,
+    9.909472752308488,
+    0.12064983964313214
+   ],
+   [
+    31.76631494548622,
+    9.909472752308488,
+    0.369755313374295
+   ],
+   [
+    31.88682342571159,
+    9.916338327527622,
+    0.06865575219134712
+   ],
+   [
+    31.87196575231055,
+    9.964676611955957,
+    0.4833828442833408
+   ],
+   [
+    31.744140992123587,
+    9.993201512170067,
+    0.2852490021411107
+   ],
+   [
+    31.702682889583986,
+    10,
+    0.6367315233636468
+   ],
+   [
+    31.60147449529913,
+    10,
+    0.4503993575476173
+   ],
+   [
+    31.62410544956955,
+    10,
+    0.6267371791415961
+   ],
+   [
+    32.0,
+    10,
+    -0.050104569011082845
+   ],
+   [
+    32.0,
+    9.993343684581596,
+    -0.06656315418403835
+   ],
+   [
+    32.0,
+    10,
+    0.1984913342014849
+   ],
+   [
+    32.0,
+    9.971588337475865,
+    -0.28411662524136005
+   ],
+   [
+    32.0,
+    10,
+    0.41836380681347407
+   ],
+   [
+    31.967360886343403,
+    9.980816343421017,
+    -0.19183656578982777
+   ],
+   [
+    32.0,
+    9.993690613795314,
+    0.12874270374297936
+   ],
+   [
+    32.0,
+    9.993690613795314,
+    0.024576697153616323
+   ],
+   [
+    31.998271357616616,
+    10,
+    0.22360073451643458
+   ],
+   [
+    31.948357895734475,
+    10,
+    0.09960434251826555
+   ],
+   [
+    32.0,
+    10,
+    0.12264973356465347
+   ],
+   [
+    32.0,
+    9.974786627715769,
+    -0.2521337228423022
+   ],
+   [
+    32.0,
+    9.963115939145514,
+    -0.1167068857025555
+   ],
+   [
+    32.0,
+    9.935633152943872,
+    -0.27482786201642284
+   ],
+   [
+    32.0,
+    9.935633152943872,
+    -0.1794899579963456
+   ],
+   [
+    32.0,
+    9.887891715046688,
+    -0.4774143789718437
+   ],
+   [
+    23.932120709205797,
+    8.48575271690899,
+    -14.02138998137697
+   ],
+   [
+    27.324870627142065,
+    7.9270263737299205,
+    -5.587263431790699
+   ],
+   [
+    24.610011177836775,
+    6.99040752706222,
+    -9.366188466677006
+   ],
+   [
+    25.463600562288974,
+    6.311058591302859,
+    -6.793489357593607
+   ],
+   [
+    24.312351961712768,
+    5.5961471384199175,
+    -7.149114528829411
+   ],
+   [
+    23.720731477482214,
+    5.5961471384199175,
+    -6.294188895664462
+   ],
+   [
+    23.47734218138236,
+    5.0261505814861,
+    -5.699965569338175
+   ],
+   [
+    23.147024117858322,
+    4.463047867858437,
+    -5.631027136276625
+   ],
+   [
+    22.735057778758534,
+    3.9931446768956205,
+    -4.699031909628168
+   ],
+   [
+    22.451659539949016,
+    3.4762995294354764,
+    -5.16845147460144
+   ],
+   [
+    22.414521924614423,
+    3.0262912106336346,
+    -4.500083188018419
+   ],
+   [
+    22.233122546455103,
+    2.536863130348031,
+    -4.894280802856038
+   ],
+   [
+    22.207695334157968,
+    2.536863130348031,
+    -4.6470296698383216
+   ],
+   [
+    21.88691173252928,
+    2.1513923869127822,
+    -3.854707434352484
+   ],
+   [
+    21.65451702830008,
+    1.723911337475511,
+    -4.274810494372712
+   ],
+   [
+    21.713512377459384,
+    1.3332175989045154,
+    -3.9069373857099556
+   ],
+   [
+    21.250209697394943,
+    1.0115612508967657,
+    -3.2165634800774967
+   ],
+   [
+    20.94050924036239,
+    0.6802048880359453,
+    -3.313563628608204
+   ],
+   [
+    20.836651983843716,
+    0.38620285278299976,
+    -2.940020352529455
+   ],
+   [
+    20.67242963412757,
+    0.38620285278299976,
+    -2.965075117333047
+   ],
+   [
+    20.678468576270408,
+    0.08743869511982844,
+    -2.987641576631713
+   ],
+   [
+    20.544533355961516,
+    -0.1756786434000867,
+    -2.6311733851991512
+   ],
+   [
+    20.274846192960354,
+    -0.4165348556293546,
+    -2.408562122292679
+   ],
+   [
+    20.00976613437359,
+    -0.619454760838263,
+    -2.0291990520890835
+   ],
+   [
+    19.742010096629798,
+    -0.8033156927163679,
+    -1.8386093187810495
+   ],
+   [
+    19.666673423521914,
+    -0.9926394824553532,
+    -1.8932378973898523
+   ],
+   [
+    19.509317638515327,
+    -0.9926394824553532,
+    -1.6880489259332023
+   ],
+   [
+    19.28091264626059,
+    -1.1046230859938342,
+    -1.119836035384811
+   ],
+   [
+    19.179671115175044,
+    -1.2627181557538785,
+    -1.5809506976004428
+   ],
+   [
+    19.052702196032225,
+    -1.3316038772550174,
+    -0.6888572150113887
+   ],
+   [
+    18.91388957254838,
+    -1.4776632767074576,
+    -1.4605939945244018
+   ],
+   [
+    19.00163878840338,
+    -1.5493721548799522,
+    -0.7170887817249465
+   ],
+   [
+    18.880435589955393,
+    -1.6840550923841429,
+    -1.3468293750419065
+   ],
+   [
+    18.332619562834648,
+    -1.6840550923841429,
+    -0.38828901528721005
+   ],
+   [
+    18.4791836294064,
+    -1.7597141582203926,
+    -0.756590658362498
+   ],
+   [
+    18.35552400320899,
+    -1.7584173701527097,
+    0.012967880676828969
+   ],
+   [
+    18.064985160394986,
+    -1.7807364865524407,
+    -0.22319116399730987
+   ],
+   [
+    18.0,
+    -1.748843692056412,
+    0.3189279449602864
+   ],
+   [
+    18.0,
+    -1.7268040858076317,
+    0.2203960624878043
+   ],
+   [
+    18.0,
+    -1.7519601030309309,
+    -0.2515601722329919
+   ],
+   [
+    18.205227633508226,
+    -1.7519601030309309,
+    -0.2474969272650398
+   ],
+   [
+    18.145409672574107,
+    -1.7617798549035866,
+    -0.09819751872655758
+   ],
+   [
+    18.13441950189246,
+    -1.7875789880058965,
+    -0.25799133102309924
+   ],
+   [
+    18.180275983616625,
+    -1.8049113458969073,
+    -0.1733235789101073
+   ],
+   [
+    18.04894078184759,
+    -1.7999810466115707,
+    0.04930299285336659
+   ],
+   [
+    18.0,
+    -1.7806642522113463,
+    0.19316794400224424
+   ],
+   [
+    18.0,
+    -1.7787689776533528,
+    0.018952745579934316
+   ],
+   [
+    18.144555528317223,
+    -1.7787689776533528,
+    -0.18038135343750739
+   ],
+   [
+    18.0,
+    -1.7436548958080904,
+    0.3511408184526239
+   ],
+   [
+    18.0,
+    -1.7071742056560697,
+    0.36480690152020756
+   ],
+   [
+    18.0,
+    -1.6660564217218,
+    0.4111778393426988
+   ],
+   [
+    18.0,
+    -1.711679090843219,
+    -0.4562266912141908
+   ],
+   [
+    18.379628691554412,
+    -1.753942784290775,
+    -0.4226369344755625
+   ],
+   [
+    18.384272966545264,
+    -1.8016856231755847,
+    -0.4774283888480966
+   ],
+   [
+    18.00533197609693,
+    -1.8016856231755847,
+    -0.02594314703187095
+   ],
+   [
+    18.0,
+    -1.793983301051908,
+    0.07702322123676808
+   ],
+   [
+    18.13697655934976,
+    -1.8424614972871611,
+    -0.4847819623525318
+   ],
+   [
+    18.30666759265469,
+    -1.8631886217110447,
+    -0.2072712442388358
+   ],
+   [
+    18.380797603846457,
+    -1.9373224232008062,
+    -0.7413380148976145
+   ],
+   [
+    18.541556586628246,
+    -1.985006835083374,
+    -0.476844118825678
+   ],
+   [
+    18.61205525801656,
+    -2.0836241952223604,
+    -0.986173601389865
+   ],
+   [
+    18.622702221137907,
+    -2.0836241952223604,
+    -0.7150427367668115
+   ],
+   [
+    18.613412624306182,
+    -2.1529794578476733,
+    -0.6935526262531297
+   ],
+   [
+    18.65077357190649,
+    -2.234565185506421,
+    -0.8158572765874759
+   ],
+   [
+    18.507881150498854,
+    -2.265216354443809,
+    -0.3065116893738846
+   ],
+   [
+    18.240562448487754,
+    -2.2927749427508894,
+    -0.27558588307080356
+   ],
+   [
+    18.37742361755672,
+    -2.3585790594047302,
+    -0.6580411665384069
+   ],
+   [
+    18.61706111160753,
+    -2.436680893723621,
+    -0.7810183431889044
+   ],
+   [
+    18.91557648014375,
+    -2.436680893723621,
+    -1.0443814323122034
+   ],
+   [
+    18.894933890815164,
+    -2.5362072054018907,
+    -0.9952631167826986
+   ],
+   [
+    18.704381446083325,
+    -2.594380628897127,
+    -0.5817342349523642
+   ],
+   [
+    18.53832665597145,
+    -2.662902770447061,
+    -0.6852214154993419
+   ],
+   [
+    18.369507821643733,
+    -2.6763178435294,
+    -0.13415073082338935
+   ],
+   [
+    18.005600135957994,
+    -2.667618081369399,
+    0.08699762160001256
+   ],
+   [
+    18.0,
+    -2.65256258725644,
+    0.15055494112958812
+   ],
+   [
+    18.209187119333603,
+    -2.65256258725644,
+    -0.26190305022907623
+   ],
+   [
+    18.190224433539637,
+    -2.6740659793109924,
+    -0.2150339205455225
+   ],
+   [
+    18.05134073629567,
+    -2.6666886449290423,
+    0.07377334381950007
+   ],
+   [
+    18.0,
+    -2.665484019923093,
+    0.012046250059491115
+   ],
+   [
+    18.0,
+    -2.6639564526537005,
+    0.015275672693924491
+   ],
+   [
+    18.032774470777127,
+    -2.680761433017266,
+    -0.16804980363565392
+   ],
+   [
+    18.20691430571222,
+    -2.718279482697609,
+    -0.37518049680342713
+   ],
+   [
+    18.0,
+    -2.718279482697609,
+    0.0829578819473582
+   ],
+   [
+    18.0,
+    -2.696633901545467,
+    0.21645581152141702
+   ],
+   [
+    18.0,
+    -2.6523619557816427,
+    0.44271945763824405
+   ],
+   [
+    18.0,
+    -2.624456285990918,
+    0.2790566979072473
+   ],
+   [
+    18.0,
+    -2.5853099777190587,
+    0.39146308271859453
+   ],
+   [
+    18.0,
+    -2.5750379747404515,
+    0.10272002978607375
+   ],
+   [
+    18.0,
+    -2.5845206773831246,
+    -0.09482702642673146
+   ],
+   [
+    18.0,
+    -2.5845206773831246,
+    0.45494153900590817
+   ],
+   [
+    18.0,
+    -2.6217197155357375,
+    -0.3719903815261283
+   ],
+   [
+    18.317783394097734,
+    -2.6613200665357444,
+    -0.39600351000007095
+   ],
+   [
+    18.099430711240366,
+    -2.643285519394313,
+    0.1803454714143129
+   ],
+   [
+    18.0,
+    -2.6428286428919945,
+    0.004568765023186927
+   ],
+   [
+    18.027116897276386,
+    -2.6568210153774325,
+    -0.13992372485438054
+   ],
+   [
+    18.195811448491575,
+    -2.6950209643042893,
+    -0.3819994892685692
+   ],
+   [
+    18.025097418527604,
+    -2.6950209643042893,
+    -0.05783069796738616
+   ],
+   [
+    18.0,
+    -2.6721971437627454,
+    0.22823820541543682
+   ],
+   [
+    18.0,
+    -2.642630012382244,
+    0.29567131380501266
+   ],
+   [
+    18.0,
+    -2.6595688456616,
+    -0.16938833279355947
+   ]
+  ],
+  "PEM": [
+   [
+    32.84806521188981,
+    0.0,
+    30.168816431233545
+   ],
+   [
+    34.21708239647173,
+    2.68133067366203,
+    26.813306736620298
+   ],
+   [
+    36.230466016751414,
+    5.285263987365052,
+    26.039333137030226
+   ],
+   [
+    37.65099187417263,
+    7.636691104454252,
+    23.514271170891995
+   ],
+   [
+    39.49327797257895,
+    9.84870948866969,
+    22.120183842154375
+   ],
+   [
+    40.798344888622836,
+    10,
+    20.603907975749934
+   ],
+   [
+    41.99924318685659,
+    10,
+    19.497007063171118
+   ],
+   [
+    43.45549517050955,
+    10,
+    18.493894254989385
+   ],
+   [
+    44.05349600886204,
+    10,
+    16.998892159108173
+   ],
+   [
+    45.04608576027373,
+    10,
+    16.386170400430444
+   ],
+   [
+    45.78502000024052,
+    10,
+    15.304736998860633
+   ],
+   [
+    46.87702659488851,
+    10,
+    13.926512264202934
+   ],
+   [
+    47.74924399818751,
+    10,
+    13.46874967427756
+   ],
+   [
+    48.27192989106978,
+    10,
+    12.734238179478595
+   ],
+   [
+    49.62074832527945,
+    10,
+    11.643612971911722
+   ],
+   [
+    50.03605030771347,
+    10,
+    10.605358015826674
+   ],
+   [
+    50.93438050879295,
+    10,
+    9.657351208234282
+   ],
+   [
+    51.76168254279586,
+    10,
+    8.774104632717503
+   ],
+   [
+    52.39960195359723,
+    10,
+    8.283364325110057
+   ],
+   [
+    52.860263090631996,
+    10,
+    7.745136867032436
+   ],
+   [
+    53.37218672361419,
+    10,
+    7.138112107173981
+   ],
+   [
+    53.755453381058025,
+    10,
+    7.049496243268862
+   ],
+   [
+    54.21873412356297,
+    10,
+    5.8912943870065035
+   ],
+   [
+    54.91824857113425,
+    10,
+    5.590260588406245
+   ],
+   [
+    55.201444044170124,
+    10,
+    5.258564154066889
+   ],
+   [
+    55.420996503682794,
+    10,
+    5.124303548209404
+   ],
+   [
+    55.66647445078694,
+    10,
+    4.678434437770882
+   ],
+   [
+    56.09055026926466,
+    10,
+    4.175581279624751
+   ],
+   [
+    56.7270879337075,
+    10,
+    3.74768007365833
+   ],
+   [
+    56.90202608795182,
+    10,
+    3.31033468804754
+   ],
+   [
+    57.30695451139334,
+    10,
+    2.8446953614572195
+   ],
+   [
+    57.62520442328743,
+    10,
+    2.6311197399599067
+   ],
+   [
+    57.89919597383269,
+    10,
+    2.213110390468394
+   ],
+   [
+    58.289683842185966,
+    10,
+    1.7594024064495883
+   ],
+   [
+    58.492620726658515,
+    10,
+    1.8191951752917248
+   ],
+   [
+    58.95358742180443,
+    10,
+    1.2737917535506327
+   ],
+   [
+    58.91087516321948,
+    10,
+    1.3805724000130155
+   ],
+   [
+    58.97531599399477,
+    10,
+    1.0859945149968127
+   ],
+   [
+    59.31260794544224,
+    10,
+    0.6109869926483853
+   ],
+   [
+    59.44668930812926,
+    10,
+    0.8695429888663782
+   ],
+   [
+    59.39809760801141,
+    10,
+    0.667827243888496
+   ],
+   [
+    59.38393176901407,
+    10,
+    0.9553865226042006
+   ],
+   [
+    59.735963500847376,
+    10,
+    0.404484999058468
+   ],
+   [
+    59.79441023215442,
+    10,
+    0.2583681707908738
+   ],
+   [
+    59.84413715958358,
+    10,
+    0.3166968875524532
+   ],
+   [
+    59.759998703410446,
+    10,
+    0.45413213203331537
+   ],
+   [
+    59.66595100891375,
+    10,
+    0.5174573126739688
+   ],
+   [
+    59.52350431238035,
+    10,
+    0.7944175782066765
+   ],
+   [
+    59.66838964506023,
+    10,
+    0.0860039145910747
+   ],
+   [
+    59.71761187890589,
+    10,
+    0.42487569010456383
+   ],
+   [
+    59.92478688702398,
+    9.99067049321397,
+    -0.0932950678602964
+   ],
+   [
+    60.0,
+    9.955602470946433,
+    -0.350680222675372
+   ],
+   [
+    60.0,
+    9.933144296337746,
+    -0.22458174608687642
+   ],
+   [
+    60.0,
+    9.899647781185624,
+    -0.3349651515212173
+   ],
+   [
+    60.0,
+    9.9012255241777,
+    0.015777429920760255
+   ],
+   [
+    60.0,
+    9.854606734456018,
+    -0.46618789721682674
+   ],
+   [
+    59.66877352738736,
+    9.854606734456018,
+    0.4775250443968915
+   ],
+   [
+    59.73658727949745,
+    9.885482991510822,
+    0.30876257054803347
+   ],
+   [
+    59.714780637564786,
+    9.943050136141474,
+    0.5756714463065364
+   ],
+   [
+    59.732767105640015,
+    9.962806445055794,
+    0.19756308914319476
+   ],
+   [
+    60.0,
+    9.95068511862051,
+    -0.12121326435282498
+   ],
+   [
+    60.0,
+    9.971057620389125,
+    0.20372501768613915
+   ],
+   [
+    59.83303848624851,
+    10,
+    0.41274751227103934
+   ],
+   [
+    59.93812823708565,
+    10,
+    0.17985751434927977
+   ],
+   [
+    59.808239290604256,
+    10,
+    0.5045798805527539
+   ],
+   [
+    59.71393879703707,
+    10,
+    0.3344281567163705
+   ],
+   [
+    59.993554635814846,
+    9.984769745821296,
+    -0.15230254178704428
+   ],
+   [
+    59.988724531848156,
+    10,
+    0.4685668476134168
+   ],
+   [
+    59.667792615397275,
+    10,
+    0.49480990199003827
+   ],
+   [
+    59.77707500684951,
+    10,
+    0.18880010538867964
+   ],
+   [
+    60.0,
+    10,
+    -0.21970381296164732
+   ],
+   [
+    60.0,
+    9.999176752767458,
+    -0.008232472325424567
+   ],
+   [
+    60.0,
+    10,
+    0.08156505744612019
+   ],
+   [
+    59.89431329348744,
+    10,
+    0.4122604444737519
+   ],
+   [
+    59.82574030631083,
+    10,
+    0.17032367863073716
+   ],
+   [
+    59.8762045379974,
+    10,
+    0.346584056718072
+   ],
+   [
+    60.0,
+    9.972555174744858,
+    -0.2744482525514229
+   ],
+   [
+    59.65299203818169,
+    9.972555174744858,
+    0.49637057062862766
+   ],
+   [
+    59.56116940625261,
+    10,
+    0.7266132710826838
+   ],
+   [
+    59.39571152365468,
+    10,
+    0.8524546020099422
+   ],
+   [
+    59.59269756698317,
+    10,
+    0.20268783002965307
+   ],
+   [
+    59.915397310582314,
+    10,
+    0.20814693600714662
+   ],
+   [
+    60.0,
+    9.971441961283881,
+    -0.2855803871611826
+   ],
+   [
+    60.0,
+    10,
+    0.3801898333226532
+   ],
+   [
+    60.0,
+    10,
+    -0.1530903464248965
+   ],
+   [
+    60.0,
+    10,
+    0.1592711237286295
+   ],
+   [
+    59.98495223223811,
+    10,
+    0.08853051474394391
+   ],
+   [
+    60.0,
+    10,
+    0.08404314426974224
+   ],
+   [
+    59.90758139833481,
+    10,
+    0.37599257382579054
+   ],
+   [
+    59.710662206366145,
+    10,
+    0.5033537668023982
+   ],
+   [
+    59.695054975412425,
+    10,
+    0.3831703529659336
+   ],
+   [
+    59.93572837194813,
+    10,
+    0.1825240311687466
+   ],
+   [
+    60.0,
+    9.998264417214925,
+    -0.01735582785074996
+   ],
+   [
+    60.0,
+    9.958671870990264,
+    -0.3959254622466162
+   ],
+   [
+    60.0,
+    9.985737430849658,
+    0.2706555985939403
+   ],
+   [
+    59.790607649790786,
+    10,
+    0.43516137728060755
+   ],
+   [
+    59.89108829408701,
+    9.997827322624733,
+    -0.021726773752668294
+   ],
+   [
+    59.884762525432905,
+    10,
+    0.5652521536085828
+   ],
+   [
+    59.660156366900736,
+    10,
+    0.48871514788807247
+   ],
+   [
+    59.69174517565656,
+    10,
+    0.40974312599851714
+   ],
+   [
+    44.59244830398589,
+    7.474976144262833,
+    -25.250238557371674
+   ],
+   [
+    51.099091614090774,
+    6.510990154551861,
+    -9.639859897109723
+   ],
+   [
+    45.54071751143131,
+    4.69377696137588,
+    -18.172131931759807
+   ],
+   [
+    46.788880977693864,
+    3.3990594173173907,
+    -12.947175440584893
+   ],
+   [
+    44.809554240731316,
+    1.995120340081917,
+    -14.039390772354736
+   ],
+   [
+    43.78132334919604,
+    1.995120340081917,
+    -13.584897111279016
+   ],
+   [
+    45.131422709142235,
+    1.1183488404383328,
+    -8.767714996435842
+   ],
+   [
+    43.33649576505842,
+    0.037345842400217544,
+    -10.810029980381152
+   ],
+   [
+    43.228937476177734,
+    -0.8458438501546544,
+    -8.831896925548719
+   ],
+   [
+    41.5318251300596,
+    -1.8663906276266784,
+    -10.20546777472024
+   ],
+   [
+    41.49916170770303,
+    -2.793024373712751,
+    -9.266337460860726
+   ],
+   [
+    40.55143706569922,
+    -3.728543275328021,
+    -9.3551890161527
+   ],
+   [
+    40.0044126921929,
+    -3.728543275328021,
+    -8.78321409069602
+   ],
+   [
+    39.44365228904735,
+    -4.4988811965726,
+    -7.703379212445789
+   ],
+   [
+    38.75350816041123,
+    -5.286113514684532,
+    -7.872323181119313
+   ],
+   [
+    38.35187752309752,
+    -5.986074993309305,
+    -6.999614786247733
+   ],
+   [
+    38.138068721207155,
+    -6.658461896696732,
+    -6.723869033874266
+   ],
+   [
+    37.403995322485734,
+    -7.374865883426586,
+    -7.164039867298538
+   ],
+   [
+    38.66721380104681,
+    -7.732850451753785,
+    -3.5798456832719907
+   ],
+   [
+    37.793569910753945,
+    -7.732850451753785,
+    -3.3192767035686472
+   ],
+   [
+    36.893016004062,
+    -8.151583901680956,
+    -4.187334499271714
+   ],
+   [
+    36.820727546173025,
+    -8.55727511034383,
+    -4.056912086628749
+   ],
+   [
+    35.835794918042005,
+    -9.071765408134599,
+    -5.144902977907677
+   ],
+   [
+    37.55335346211049,
+    -9.134289157980646,
+    -0.6252374984604785
+   ],
+   [
+    34.81956337243892,
+    -9.67164150061613,
+    -5.373523426354829
+   ],
+   [
+    37.228186988364946,
+    -9.642611092396896,
+    0.2903040821923284
+   ],
+   [
+    36.922293850658264,
+    -9.642611092396896,
+    -2.2552369327621733
+   ],
+   [
+    36.67862607647274,
+    -9.894185437439964,
+    -2.5157434504306835
+   ],
+   [
+    36.437346438492206,
+    -10,
+    -3.154138851738331
+   ],
+   [
+    35.1501960781339,
+    -10,
+    -5.172242024261276
+   ],
+   [
+    35.29456369561906,
+    -10,
+    -4.109592785276405
+   ],
+   [
+    36.53183238531671,
+    -10,
+    -0.36812041271263496
+   ],
+   [
+    35.27368749508707,
+    -10,
+    -2.5435882526247156
+   ],
+   [
+    35.54392143507668,
+    -10,
+    -0.8326829810595271
+   ],
+   [
+    35.142904293472284,
+    -10,
+    -1.1781664748692648
+   ],
+   [
+    34.880205967524844,
+    -10,
+    -1.1947037449218385
+   ],
+   [
+    34.36702749723854,
+    -10,
+    -2.2552891728908193
+   ],
+   [
+    35.2788956105182,
+    -10,
+    -0.7285601330850895
+   ],
+   [
+    33.654414862124455,
+    -10,
+    -3.405528282304374
+   ],
+   [
+    34.47680486176346,
+    -10,
+    -0.633101607014936
+   ],
+   [
+    34.00965050654055,
+    -10,
+    -0.5662035878216471
+   ],
+   [
+    34.42616790557137,
+    -10,
+    -0.13460361443429036
+   ],
+   [
+    32.838243850700024,
+    -10,
+    -3.0335816970291916
+   ],
+   [
+    33.55091818541582,
+    -10,
+    -1.3189375232383682
+   ],
+   [
+    33.28752197099942,
+    -10,
+    -1.9818817103026518
+   ],
+   [
+    34.99343772490602,
+    -9.911665149979886,
+    0.8833485002011443
+   ],
+   [
+    32.931152771977864,
+    -10,
+    -2.1758387106097885
+   ],
+   [
+    33.14553153461443,
+    -10,
+    1.8380067273250376
+   ],
+   [
+    32.88503130366234,
+    -9.905327935863314,
+    0.9467206413668663
+   ],
+   [
+    33.277498339188035,
+    -9.788836418612734,
+    1.1649151725058076
+   ],
+   [
+    32.123009007629705,
+    -9.798523145256183,
+    -0.09686726643449362
+   ],
+   [
+    32.71849268799036,
+    -9.63091659262135,
+    1.676065526348335
+   ],
+   [
+    32.66476335063724,
+    -9.518138616784677,
+    1.127779758366728
+   ],
+   [
+    31.79035954398691,
+    -9.54503065428316,
+    -0.26892037498483035
+   ],
+   [
+    32.28135216216754,
+    -9.54503065428316,
+    2.6904168299925786
+   ],
+   [
+    31.76994774918222,
+    -9.38083000546543,
+    1.6420064881772944
+   ],
+   [
+    31.793301631850216,
+    -9.16160595577919,
+    2.1922404968624
+   ],
+   [
+    31.958973517566744,
+    -8.884768616768245,
+    2.768373390109467
+   ],
+   [
+    30.27872864492216,
+    -8.888920523506359,
+    -0.04151906738113453
+   ],
+   [
+    30.756785904947037,
+    -8.727610022292202,
+    1.6131050121415598
+   ],
+   [
+    31.809600050953325,
+    -8.348881384217403,
+    3.7872863807479966
+   ],
+   [
+    31.46582414642341,
+    -8.348881384217403,
+    -0.3573178589925021
+   ],
+   [
+    33.371871627457,
+    -8.081154083985956,
+    2.677273002314468
+   ],
+   [
+    31.273976864780757,
+    -8.195495027326714,
+    -1.1434094334075837
+   ],
+   [
+    32.6337628849212,
+    -8.01751862751,
+    1.7797639981671338
+   ],
+   [
+    30.834112788786005,
+    -8.201043905916183,
+    -1.8352527840618293
+   ],
+   [
+    33.36591744241689,
+    -7.873440401175667,
+    3.2760350474051556
+   ],
+   [
+    31.741737125949935,
+    -7.84455532044244,
+    0.28885080733226687
+   ],
+   [
+    32.392903556155815,
+    -7.84455532044244,
+    2.5371922429481657
+   ],
+   [
+    30.993838475974503,
+    -7.891267495014132,
+    -0.46712174571691634
+   ],
+   [
+    33.093428025617385,
+    -7.5568392679330065,
+    3.344282270811256
+   ],
+   [
+    30.606525751778502,
+    -7.623386357598999,
+    -0.6654708966599259
+   ],
+   [
+    32.91991150253072,
+    -7.271149228110889,
+    3.5223712948811077
+   ],
+   [
+    30.893352370734203,
+    -7.254200730428997,
+    0.1694849768189144
+   ],
+   [
+    31.929125445098215,
+    -7.1140878623316075,
+    1.4011286809738976
+   ],
+   [
+    32.22220001387377,
+    -7.1140878623316075,
+    2.471833168009475
+   ],
+   [
+    30.432558684327336,
+    -7.1418366138163085,
+    -0.2774875148470137
+   ],
+   [
+    31.202197133395842,
+    -7.0212536915564465,
+    1.2058292225986236
+   ],
+   [
+    31.627431104135553,
+    -6.817261183903125,
+    2.039925076533212
+   ],
+   [
+    30.62616294184472,
+    -6.720926956228676,
+    0.9633422767444912
+   ],
+   [
+    31.211639428826924,
+    -6.585183816011996,
+    1.357431402166796
+   ],
+   [
+    31.75623235102292,
+    -6.393827719554581,
+    1.913560964574149
+   ],
+   [
+    32.0629489177896,
+    -6.393827719554581,
+    1.8589128666254169
+   ],
+   [
+    32.44749379262699,
+    -6.1506746746599195,
+    2.431530448946617
+   ],
+   [
+    31.841583468927826,
+    -6.074252684019605,
+    0.7642199064031487
+   ],
+   [
+    33.17935846508101,
+    -5.789246275497923,
+    2.8500640852168218
+   ],
+   [
+    30.603762399435293,
+    -5.931008582483593,
+    -1.4176230698567096
+   ],
+   [
+    32.127351524189166,
+    -5.737779602715141,
+    1.932289797684529
+   ],
+   [
+    31.004807817128683,
+    -5.742065199799599,
+    -0.04285597084458459
+   ],
+   [
+    31.1954186120918,
+    -5.742065199799599,
+    0.7960079995626899
+   ],
+   [
+    31.657931420308742,
+    -5.581826859506491,
+    1.602383402931082
+   ],
+   [
+    32.32885960128252,
+    -5.308877959143495,
+    2.729489003629965
+   ],
+   [
+    32.18580687361725,
+    -5.0672657584612235,
+    2.416122006822718
+   ],
+   [
+    30.823117181594206,
+    -5.1359302387468535,
+    -0.6866448028562999
+   ],
+   [
+    31.36932213356933,
+    -5.111818418944003,
+    0.24111819802850576
+   ],
+   [
+    32.610398646512515,
+    -4.948898574533262,
+    1.6291984441074057
+   ],
+   [
+    32.78116131551945,
+    -4.948898574533262,
+    0.4729516003955183
+   ],
+   [
+    32.14721595420802,
+    -4.967651339905006,
+    -0.18752765371744573
+   ],
+   [
+    33.85694979992176,
+    -4.754281718798694,
+    2.133696211063125
+   ],
+   [
+    32.787999104488314,
+    -4.670221001722425,
+    0.840607170762695
+   ]
+  ]
+ },
+ "ramp_sims": {
+  "AEM": {
+   "after_stop": {
+    "current": 0.0,
+    "efficiency": 66.8054375,
+    "hydrogen_produced": 0.005000000000000004,
+    "inverter": {
+     "efficiency": 95.0,
+     "enabled": false,
+     "frequency": 52.5,
+     "power": 0.0,
+     "voltage": 0.0
+    },
+    "mode": "IDLE",
+    "oxygen_produced": 0.002500000000000002,
+    "power": 3333.3,
+    "pressure": 1.0,
+    "run_time": 31.899969577789307,
+    "safety": {
+     "alerts": [
+      250,
+      [
+       "Voltage too low: 0.1V < 25.0V"
+      ],
+      [
+       "Voltage too high: 1000.0V > 55.0V"
+      ]
+     ],
+     "safe": false,
+     "warnings": [
+      22,
+      [
+       "Current below minimum: 0.6786291387058317A < 15.0A"
+      ],
+      [
+       "Current below minimum: 14.929841051528298A < 15.0A"
+      ]
+     ]
+    },
+    "temperature": 25.0,
+    "type": "AEM",
+    "voltage": 0.0,
+    "water_consumed": 0.005555555555555556
+   },
+   "final": {
+    "current": 90.48298032192595,
+    "efficiency": 66.8054375,
+    "hydrogen_produced": 0.005000000000000004,
+    "inverter": {
+     "efficiency": 95.0,
+     "enabled": true,
+     "frequency": 52.5,
+     "power": 3333.3,
+     "voltage": 0.0
+    },
+    "mode": "NORMAL",
+    "oxygen_produced": 0.002500000000000002,
+    "power": 3333.3,
+    "pressure": 1.0,
+    "run_time": 31.899969577789307,
+    "safety": {
+     "alerts": [
+      250,
+      [
+       "Voltage too low: 0.1V < 25.0V"
+      ],
+      [
+       "Voltage too high: 1000.0V > 55.0V"
+      ]
+     ],
+     "safe": false,
+     "warnings": [
+      22,
+      [
+       "Current below minimum: 0.6786291387058317A < 15.0A"
+      ],
+      [
+       "Current below minimum: 14.929841051528298A < 15.0A"
+      ]
+     ]
+    },
+    "temperature": 25.0,
+    "type": "AEM",
+    "voltage": 36.838972236995055,
+    "water_consumed": 0.005555555555555556
+   },
+   "log_every_10th": [
+    {
+     "current": 0.6786291387058317,
+     "efficiency": 55.088541666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 25.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 25.0,
+     "pressure": 1.0,
+     "run_time": 18.499982357025146,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 7.464920525764149,
+     "efficiency": 55.973958333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 275.0,
+     "pressure": 1.0,
+     "run_time": 19.49998140335083,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 14.251211912822466,
+     "efficiency": 56.859375,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 525.0,
+     "pressure": 1.0,
+     "run_time": 20.499980449676514,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 21.037503299880782,
+     "efficiency": 57.744791666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 775.0,
+     "pressure": 1.0,
+     "run_time": 21.499979496002197,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 27.8237946869391,
+     "efficiency": 58.630208333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1025.0,
+     "pressure": 1.0,
+     "run_time": 22.49997854232788,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 34.610086073997415,
+     "efficiency": 59.515625,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1275.0,
+     "pressure": 1.0,
+     "run_time": 23.499977588653564,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 41.396377461055735,
+     "efficiency": 60.401041666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1525.0,
+     "pressure": 1.0,
+     "run_time": 24.499976634979248,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 48.18266884811405,
+     "efficiency": 61.286458333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1775.0,
+     "pressure": 1.0,
+     "run_time": 25.49997568130493,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 54.96896023517237,
+     "efficiency": 62.171875,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2025.0,
+     "pressure": 1.0,
+     "run_time": 26.499974727630615,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 61.75525162223069,
+     "efficiency": 63.057291666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2275.0,
+     "pressure": 1.0,
+     "run_time": 27.4999737739563,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 68.541543009289,
+     "efficiency": 63.94270833333333,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2525.0,
+     "pressure": 1.0,
+     "run_time": 28.499972820281982,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 75.32783439634731,
+     "efficiency": 64.828125,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2775.0,
+     "pressure": 1.0,
+     "run_time": 29.499971866607666,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 82.11412578340564,
+     "efficiency": 65.71354166666667,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 3025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 3025.0,
+     "pressure": 1.0,
+     "run_time": 30.49997091293335,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 88.90041717046395,
+     "efficiency": 66.59895833333333,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 3275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 3275.0,
+     "pressure": 1.0,
+     "run_time": 31.499969959259033,
+     "safety": {
+      "alerts": [
+       250,
+       [
+        "Voltage too low: 0.1V < 25.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 55.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       22,
+       [
+        "Current below minimum: 0.6786291387058317A < 15.0A"
+       ],
+       [
+        "Current below minimum: 14.929841051528298A < 15.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "AEM",
+     "voltage": 36.838972236995055,
+     "water_consumed": 0.0
+    }
+   ],
+   "log_len": 134,
+   "ok": {
+    "freq_bad": false,
+    "freq_ok": true,
+    "power_over": false,
+    "start": true,
+    "start_again": false,
+    "stop": true,
+    "volt_bad": false
+   }
+  },
+  "ALKALINE": {
+   "after_stop": {
+    "current": 0.0,
+    "efficiency": 63.111000000000004,
+    "hydrogen_produced": 0.004722222222222222,
+    "inverter": {
+     "efficiency": 95.0,
+     "enabled": false,
+     "frequency": 52.5,
+     "power": 0.0,
+     "voltage": 0.0
+    },
+    "mode": "IDLE",
+    "oxygen_produced": 0.002361111111111111,
+    "power": 3333.3,
+    "pressure": 1.0,
+    "run_time": 23.899977207183838,
+    "safety": {
+     "alerts": [
+      181,
+      [
+       "Voltage too low: 0.1V < 18.0V"
+      ],
+      [
+       "Voltage too high: 1000.0V > 32.0V"
+      ]
+     ],
+     "safe": false,
+     "warnings": [
+      16,
+      [
+       "Current below minimum: 1.2227449454917587A < 20.0A"
+      ],
+      [
+       "Current below minimum: 19.56391912786814A < 20.0A"
+      ]
+     ]
+    },
+    "temperature": 25.0,
+    "type": "ALKALINE",
+    "voltage": 0.0,
+    "water_consumed": 0.006666666666666664
+   },
+   "final": {
+    "current": 163.03102907230718,
+    "efficiency": 63.111000000000004,
+    "hydrogen_produced": 0.004722222222222222,
+    "inverter": {
+     "efficiency": 95.0,
+     "enabled": true,
+     "frequency": 52.5,
+     "power": 3333.3,
+     "voltage": 0.0
+    },
+    "mode": "NORMAL",
+    "oxygen_produced": 0.002361111111111111,
+    "power": 3333.3,
+    "pressure": 1.0,
+    "run_time": 23.899977207183838,
+    "safety": {
+     "alerts": [
+      181,
+      [
+       "Voltage too low: 0.1V < 18.0V"
+      ],
+      [
+       "Voltage too high: 1000.0V > 32.0V"
+      ]
+     ],
+     "safe": false,
+     "warnings": [
+      16,
+      [
+       "Current below minimum: 1.2227449454917587A < 20.0A"
+      ],
+      [
+       "Current below minimum: 19.56391912786814A < 20.0A"
+      ]
+     ]
+    },
+    "temperature": 25.0,
+    "type": "ALKALINE",
+    "voltage": 20.445801139620006,
+    "water_consumed": 0.006666666666666664
+   },
+   "log_every_10th": [
+    {
+     "current": 1.2227449454917587,
+     "efficiency": 52.083333333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 25.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 25.0,
+     "pressure": 1.0,
+     "run_time": 10.499989986419678,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 13.450194400409345,
+     "efficiency": 52.916666666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 275.0,
+     "pressure": 1.0,
+     "run_time": 11.499989032745361,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 25.67764385532693,
+     "efficiency": 53.75,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 525.0,
+     "pressure": 1.0,
+     "run_time": 12.499988079071045,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 37.90509331024452,
+     "efficiency": 54.583333333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 775.0,
+     "pressure": 1.0,
+     "run_time": 13.499987125396729,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 50.1325427651621,
+     "efficiency": 55.416666666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1025.0,
+     "pressure": 1.0,
+     "run_time": 14.499986171722412,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 62.35999222007969,
+     "efficiency": 56.25,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1275.0,
+     "pressure": 1.0,
+     "run_time": 15.499985218048096,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 74.58744167499728,
+     "efficiency": 57.083333333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1525.0,
+     "pressure": 1.0,
+     "run_time": 16.49998426437378,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 86.81489112991486,
+     "efficiency": 57.916666666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1775.0,
+     "pressure": 1.0,
+     "run_time": 17.499983310699463,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 99.04234058483244,
+     "efficiency": 58.75,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2025.0,
+     "pressure": 1.0,
+     "run_time": 18.499982357025146,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 111.26979003975003,
+     "efficiency": 59.583333333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2275.0,
+     "pressure": 1.0,
+     "run_time": 19.49998140335083,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 123.49723949466762,
+     "efficiency": 60.416666666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2525.0,
+     "pressure": 1.0,
+     "run_time": 20.499980449676514,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 135.72468894958521,
+     "efficiency": 61.25,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2775.0,
+     "pressure": 1.0,
+     "run_time": 21.499979496002197,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 147.9521384045028,
+     "efficiency": 62.083333333333336,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 3025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 3025.0,
+     "pressure": 1.0,
+     "run_time": 22.49997854232788,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 160.17958785942037,
+     "efficiency": 62.916666666666664,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 3275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 3275.0,
+     "pressure": 1.0,
+     "run_time": 23.499977588653564,
+     "safety": {
+      "alerts": [
+       181,
+       [
+        "Voltage too low: 0.1V < 18.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 32.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       16,
+       [
+        "Current below minimum: 1.2227449454917587A < 20.0A"
+       ],
+       [
+        "Current below minimum: 19.56391912786814A < 20.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "ALKALINE",
+     "voltage": 20.445801139620006,
+     "water_consumed": 0.0
+    }
+   ],
+   "log_len": 134,
+   "ok": {
+    "freq_bad": false,
+    "freq_ok": true,
+    "power_over": false,
+    "start": true,
+    "start_again": false,
+    "stop": true,
+    "volt_bad": false
+   }
+  },
+  "PEM": {
+   "after_stop": {
+    "current": 0.0,
+    "efficiency": 70.4165625,
+    "hydrogen_produced": 0.005277777777777775,
+    "inverter": {
+     "efficiency": 95.0,
+     "enabled": false,
+     "frequency": 52.5,
+     "power": 0.0,
+     "voltage": 0.0
+    },
+    "mode": "IDLE",
+    "oxygen_produced": 0.0026388888888888877,
+    "power": 3333.3,
+    "pressure": 1.0,
+    "run_time": 35.89996576309204,
+    "safety": {
+     "alerts": [
+      300,
+      [
+       "Voltage too low: 0.1V < 30.0V"
+      ],
+      [
+       "Voltage too high: 1000.0V > 60.0V"
+      ]
+     ],
+     "safe": false,
+     "warnings": [
+      17,
+      [
+       "Current below minimum: 0.5564122984967182A < 10.0A"
+      ],
+      [
+       "Current below minimum: 9.45900907444421A < 10.0A"
+      ]
+     ]
+    },
+    "temperature": 25.0,
+    "type": "PEM",
+    "voltage": 0.0,
+    "water_consumed": 0.005000000000000004
+   },
+   "final": {
+    "current": 74.18756458316444,
+    "efficiency": 70.4165625,
+    "hydrogen_produced": 0.005277777777777775,
+    "inverter": {
+     "efficiency": 95.0,
+     "enabled": true,
+     "frequency": 52.5,
+     "power": 3333.3,
+     "voltage": 0.0
+    },
+    "mode": "NORMAL",
+    "oxygen_produced": 0.0026388888888888877,
+    "power": 3333.3,
+    "pressure": 1.0,
+    "run_time": 35.89996576309204,
+    "safety": {
+     "alerts": [
+      300,
+      [
+       "Voltage too low: 0.1V < 30.0V"
+      ],
+      [
+       "Voltage too high: 1000.0V > 60.0V"
+      ]
+     ],
+     "safe": false,
+     "warnings": [
+      17,
+      [
+       "Current below minimum: 0.5564122984967182A < 10.0A"
+      ],
+      [
+       "Current below minimum: 9.45900907444421A < 10.0A"
+      ]
+     ]
+    },
+    "temperature": 25.0,
+    "type": "PEM",
+    "voltage": 44.930710675417345,
+    "water_consumed": 0.005000000000000004
+   },
+   "log_every_10th": [
+    {
+     "current": 0.5564122984967182,
+     "efficiency": 60.078125,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 25.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 25.0,
+     "pressure": 1.0,
+     "run_time": 22.49997854232788,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 6.120535283463901,
+     "efficiency": 60.859375,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 275.0,
+     "pressure": 1.0,
+     "run_time": 23.499977588653564,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 11.684658268431082,
+     "efficiency": 61.640625,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 525.0,
+     "pressure": 1.0,
+     "run_time": 24.499976634979248,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 17.248781253398267,
+     "efficiency": 62.421875,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 775.0,
+     "pressure": 1.0,
+     "run_time": 25.49997568130493,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 22.812904238365448,
+     "efficiency": 63.203125,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1025.0,
+     "pressure": 1.0,
+     "run_time": 26.499974727630615,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 28.37702722333263,
+     "efficiency": 63.984375,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1275.0,
+     "pressure": 1.0,
+     "run_time": 27.4999737739563,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 33.94115020829981,
+     "efficiency": 64.765625,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1525.0,
+     "pressure": 1.0,
+     "run_time": 28.499972820281982,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 39.505273193266994,
+     "efficiency": 65.546875,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 1775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 1775.0,
+     "pressure": 1.0,
+     "run_time": 29.499971866607666,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 45.06939617823418,
+     "efficiency": 66.328125,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2025.0,
+     "pressure": 1.0,
+     "run_time": 30.49997091293335,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 50.633519163201356,
+     "efficiency": 67.109375,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2275.0,
+     "pressure": 1.0,
+     "run_time": 31.499969959259033,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 56.19764214816854,
+     "efficiency": 67.890625,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2525.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2525.0,
+     "pressure": 1.0,
+     "run_time": 32.49996900558472,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 61.761765133135725,
+     "efficiency": 68.671875,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 2775.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 2775.0,
+     "pressure": 1.0,
+     "run_time": 33.4999680519104,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 67.32588811810291,
+     "efficiency": 69.453125,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 3025.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 3025.0,
+     "pressure": 1.0,
+     "run_time": 34.499967098236084,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    },
+    {
+     "current": 72.8900111030701,
+     "efficiency": 70.234375,
+     "hydrogen_produced": 0.0,
+     "inverter": {
+      "efficiency": 95.0,
+      "enabled": true,
+      "frequency": 50.0,
+      "power": 3275.0,
+      "voltage": 0.0
+     },
+     "mode": "RAMP_UP",
+     "oxygen_produced": 0.0,
+     "power": 3275.0,
+     "pressure": 1.0,
+     "run_time": 35.49996614456177,
+     "safety": {
+      "alerts": [
+       300,
+       [
+        "Voltage too low: 0.1V < 30.0V"
+       ],
+       [
+        "Voltage too high: 1000.0V > 60.0V"
+       ]
+      ],
+      "safe": false,
+      "warnings": [
+       17,
+       [
+        "Current below minimum: 0.5564122984967182A < 10.0A"
+       ],
+       [
+        "Current below minimum: 9.45900907444421A < 10.0A"
+       ]
+      ]
+     },
+     "temperature": 25.0,
+     "type": "PEM",
+     "voltage": 44.930710675417345,
+     "water_consumed": 0.0
+    }
+   ],
+   "log_len": 134,
+   "ok": {
+    "freq_bad": false,
+    "freq_ok": true,
+    "power_over": false,
+    "start": true,
+    "start_again": false,
+    "stop": true,
+    "volt_bad": false
+   }
+  }
+ },
+ "safety_checks": [
+  [
+   false,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ ],
+ "safety_status": {
+  "alerts": [
+   "Voltage too low: 10V < 30.0V",
+   "Voltage too high: 61V > 60.0V",
+   "Current too high: 151A > 150.0A",
+   "Temperature too high: 81\u00b0C",
+   "Pressure too high: 36 bar"
+  ],
+  "safe": false,
+  "warnings": [
+   "Current below minimum: 5A < 10.0A",
+   "Temperature below minimum: 0\u00b0C",
+   "Pressure below minimum: 0.5 bar"
+  ]
+ },
+ "schedules": {
+  "CUSTOM": [
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0
+  ],
+  "EXPONENTIAL": [
+   1000.0,
+   1024.077708221348,
+   1049.3897757179232,
+   1075.9994827158303,
+   1103.9733535428686,
+   1133.3813229395018,
+   1164.2969108958678,
+   1196.7974064519194,
+   1230.9640609202017,
+   1266.8822910143158,
+   1304.6418923908968,
+   1344.3372641389592,
+   1386.0676447778328,
+   1429.937360353687,
+   1476.0560852548806,
+   1524.5391163981844,
+   1575.5076614713316,
+   1629.089141952512,
+   1685.4175116643587,
+   1744.6335916588055,
+   1806.8854222700375,
+   1872.3286332156617,
+   1941.1268326713528,
+   2013.4520162916642,
+   2089.4849971995545,
+   2169.415858019604,
+   2253.444426085006,
+   2341.780773006355,
+   2434.6457398511457,
+   2532.271489246948,
+   2634.9020857884952,
+   2742.7941061997285,
+   2856.217280776187,
+   2975.4551677113586,
+   3100.805861992804,
+   3232.5827406403037,
+   3371.115246149117,
+   3516.7497100969654,
+   3669.8502189737646,
+   3830.799524398671,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0
+  ],
+  "LINEAR": [
+   1000.0,
+   1075.0,
+   1150.0,
+   1225.0,
+   1300.0,
+   1375.0,
+   1450.0,
+   1525.0,
+   1600.0,
+   1675.0,
+   1750.0,
+   1825.0,
+   1900.0,
+   1975.0,
+   2050.0,
+   2125.0,
+   2200.0,
+   2275.0,
+   2350.0,
+   2425.0,
+   2500.0,
+   2575.0,
+   2650.0,
+   2725.0,
+   2800.0,
+   2875.0,
+   2950.0,
+   3025.0,
+   3100.0,
+   3175.0,
+   3250.0,
+   3325.0,
+   3400.0,
+   3475.0,
+   3550.0,
+   3625.0,
+   3700.0,
+   3775.0,
+   3850.0,
+   3925.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0
+  ],
+  "LOGARITHMIC": [
+   1000.0,
+   1106.8717291921637,
+   1211.1679836741941,
+   1313.0099794442067,
+   1412.510571249805,
+   1509.775004326937,
+   1604.9015835089513,
+   1697.9822703708253,
+   1789.1032175013813,
+   1878.345247683538,
+   1965.784284662087,
+   2051.491741252399,
+   2135.53486976119,
+   2217.9770790275106,
+   2298.878221828319,
+   2378.294855911892,
+   2456.280481510725,
+   2532.8857578321386,
+   2608.1587007206294,
+   2682.144863423437,
+   2754.8875021634685,
+   2826.4277280265715,
+   2896.804646498539,
+   2966.0554858376627,
+   3034.2157153379135,
+   3101.3191544232764,
+   3167.398073413273,
+   3232.4832867112304,
+   3296.604239088931,
+   3359.7890856724202,
+   3422.064766172812,
+   3483.457073851959,
+   3543.99071966485,
+   3603.6893919779645,
+   3662.5758122247626,
+   3720.6717868255555,
+   3777.998255668669,
+   3834.5753374226174,
+   3890.4223719246584,
+   3945.557959869222,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0
+  ],
+  "STEP": [
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   1000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0,
+   4000.0
+  ]
+ }
+}

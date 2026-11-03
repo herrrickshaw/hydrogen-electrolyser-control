@@ -3,23 +3,34 @@ Advanced Hydrogen Electrolyser Control Interface
 Includes scheduling, real-time monitoring, and advanced safety features
 """
 
-import threading
-import json
+from __future__ import annotations
+
 import csv
-from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Callable
-from dataclasses import dataclass, asdict
-from enum import Enum
+import json
 import logging
+import threading
+import time
+from dataclasses import asdict, dataclass
+from datetime import datetime
+from enum import Enum
+from typing import Callable, Dict, List, Optional
 
 from electrolyser_control_system import (
     ElectrolyserControlSystem,
     ElectrolyserType,
-    OperatingMode,
-    VoltageRegulator
 )
 
 logger = logging.getLogger(__name__)
+
+# NumPy is only needed for the LOGARITHMIC ramp profile
+try:
+    import numpy as np
+except ImportError:
+    np = None
+    logger.warning("NumPy not available - some ramp profiles may not work")
+
+# Value of e used by the EXPONENTIAL ramp. Kept at 2.718 (not math.e) so ramp output is unchanged.
+EXP_RAMP_BASE = 2.718
 
 
 class RampProfile(Enum):
@@ -52,11 +63,11 @@ class RampSchedule:
 
         elif self.profile == RampProfile.EXPONENTIAL:
             # Exponential ramp
-            exp_val = (2.718 ** (progress * 2) - 1) / (2.718 ** 2 - 1)
+            exp_val = (EXP_RAMP_BASE ** (progress * 2) - 1) / (EXP_RAMP_BASE ** 2 - 1)
             return self.start_value + (self.end_value - self.start_value) * exp_val
 
         elif self.profile == RampProfile.LOGARITHMIC:
-            # Logarithmic ramp (slower at start, faster at end)
+            # Logarithmic ramp (concave: faster at start, slower at end)
             log_val = np.log(progress + 1) / np.log(2)
             return self.start_value + (self.end_value - self.start_value) * log_val
 
@@ -86,6 +97,26 @@ class OperationEvent:
     water_consumed: float
     event_type: str  # 'normal', 'warning', 'alert', 'transition'
     message: Optional[str] = None
+
+
+def event_from_status(status: Dict, event_type: str, timestamp: datetime) -> OperationEvent:
+    """Build a log event from ElectrolyserBase.get_status() output (V, A, W, degC, bar, %, Nm3, L)."""
+    alerts = status['safety']['alerts']
+    return OperationEvent(
+        timestamp=timestamp,
+        mode=status['mode'],
+        voltage=status['voltage'],
+        current=status['current'],
+        power=status['power'],
+        temperature=status['temperature'],
+        pressure=status['pressure'],
+        efficiency=status['efficiency'],
+        hydrogen_produced=status['hydrogen_produced'],
+        oxygen_produced=status['oxygen_produced'],
+        water_consumed=status['water_consumed'],
+        event_type=event_type,
+        message=alerts[0] if alerts else None
+    )
 
 
 class DataLogger:
@@ -262,7 +293,7 @@ class AdvancedElectrolyserController:
         self.last_status = None
         self.update_interval = 0.1  # seconds
 
-        logger.info(f"AdvancedElectrolyserController initialized")
+        logger.info("AdvancedElectrolyserController initialized")
 
     def register_safety_callback(self, callback: Callable):
         """Register callback for safety events"""
@@ -325,29 +356,12 @@ class AdvancedElectrolyserController:
             safety = status['safety']
             event_type = 'alert' if not safety['safe'] else 'normal'
 
-            event = OperationEvent(
-                timestamp=datetime.now(),
-                mode=status['mode'],
-                voltage=status['voltage'],
-                current=status['current'],
-                power=status['power'],
-                temperature=status['temperature'],
-                pressure=status['pressure'],
-                efficiency=status['efficiency'],
-                hydrogen_produced=status['hydrogen_produced'],
-                oxygen_produced=status['oxygen_produced'],
-                water_consumed=status['water_consumed'],
-                event_type=event_type,
-                message=safety['alerts'][0] if safety['alerts'] else None
-            )
-
-            self.logger.log_event(event)
+            self.logger.log_event(event_from_status(status, event_type, datetime.now()))
 
             # Check safety interlocks
             if safety['alerts']:
                 logger.warning(f"Safety alert: {safety['alerts']}")
 
-            import time
             time.sleep(self.update_interval)
 
     def get_real_time_status(self) -> Dict:
@@ -366,7 +380,6 @@ class AdvancedElectrolyserController:
                           f"P:{status['power']:.0f}W | "
                           f"Eff:{status['efficiency']:.1f}% | "
                           f"H2:{status['hydrogen_produced']:.3f}Nm³", end='')
-                import time
                 time.sleep(interval)
         except KeyboardInterrupt:
             print("\n")
@@ -389,14 +402,6 @@ class AdvancedElectrolyserController:
 
         logger.info(f"Report exported: {filename}")
         return report
-
-
-# Example numpy import for advanced ramp profiles
-try:
-    import numpy as np
-except ImportError:
-    np = None
-    logger.warning("NumPy not available - some ramp profiles may not work")
 
 
 def demo_advanced_control():
