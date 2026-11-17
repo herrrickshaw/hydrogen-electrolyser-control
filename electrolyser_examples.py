@@ -421,14 +421,15 @@ def example_safety_monitoring():
         print(f"   Alert: {status['safety']['alerts'][0]}")
 
     # Reset
-    system.safety_monitor.clear()
+    system.electrolyser.safety_monitor.clear()
     system.set_voltage(45.0)
 
     print(f"\n3. Testing current limits...")
 
     # Try to exceed current
     print(f"   Attempting to set power to 30000W (exceeds current limit)...")
-    system.set_power(30000.0)
+    accepted = system.set_power(30000.0)
+    print(f"   Setpoint accepted: {accepted} (inverter rated power is the first limit)")
     status = system.get_status()
     print(f"   Safe: {status['safety']['safe']}")
     if not status['safety']['safe']:
@@ -454,6 +455,8 @@ def example_production_calculation():
 
     system = ElectrolyserControlSystem(ElectrolyserType.PEM)
     system.start_operation()
+    # Power -> current needs a non-zero voltage (I = P / V)
+    system.set_voltage(system.electrolyser.specs.nominal_voltage)
 
     power_levels = [500, 1000, 2000, 3000, 4000, 4500]
 
@@ -467,20 +470,18 @@ def example_production_calculation():
 
         # Simulate 1 hour of operation
         for i in range(3600):
-            system.electrolyser.update_state(1.0 / 3600)
+            system.electrolyser.update_state(1.0)  # dt is in seconds
             if i % 360 == 0:
                 pass  # Simulate without printing
 
         status = system.get_status()
         specs = system.electrolyser.specs
 
-        # Calculate production rates
-        runtime_hours = status['run_time'] / 3600
-        if runtime_hours > 0:
-            h2_rate = status['hydrogen_produced'] / runtime_hours
-            o2_rate = status['oxygen_produced'] / runtime_hours
-        else:
-            h2_rate = o2_rate = 0
+        # Production rates: 3600 x 1 s steps were simulated = 1 hour
+        # (status['run_time'] is wall-clock time, not simulated time)
+        simulated_hours = 1.0
+        h2_rate = status['hydrogen_produced'] / simulated_hours
+        o2_rate = status['oxygen_produced'] / simulated_hours
 
         print(f"{power:<12} {status['voltage']:<12.2f} "
               f"{status['current']:<12.2f} {status['efficiency']:<10.1f} "

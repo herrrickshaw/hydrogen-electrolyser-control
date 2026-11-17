@@ -303,7 +303,12 @@ class ElectrolyserBase(ABC):
             return False
 
         # Regulate voltage
+        # One PID step, not a jump to the target: from a cold start the result can
+        # differ from the request (e.g. 45V -> 30V), so warn instead of staying silent.
         self.current_voltage = self.voltage_regulator.regulate(voltage, self.current_voltage)
+        if abs(self.current_voltage - voltage) > 0.01:
+            logger.warning(f"Voltage setpoint {voltage}V not reached in one step; now at "
+                           f"{self.current_voltage:.2f}V (call again or use ramp_to_voltage)")
         self.inverter.set_voltage(self.current_voltage)
         return True
 
@@ -334,6 +339,8 @@ class ElectrolyserBase(ABC):
         if self.current_mode == OperatingMode.NORMAL and self.current_power > 0:
             # Production rate: mol/s → Nm³/hour conversion
             time_fraction = dt / 3600.0  # Convert dt from seconds to hours
+            # Spec rates are at nominal power; production scales with load (Faraday: H2 ~ current)
+            time_fraction *= self.current_power / self.specs.nominal_power
 
             self.hydrogen_produced += self.specs.hydrogen_production_rate * time_fraction
             self.oxygen_produced += self.specs.oxygen_production_rate * time_fraction
