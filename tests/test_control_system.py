@@ -249,6 +249,9 @@ def test_no_production_at_zero_power_even_in_normal_mode(pem):
 @pytest.mark.parametrize("start_mode,target,ok,end_mode", [
     (OperatingMode.RAMP_UP, OperatingMode.NORMAL, True, OperatingMode.NORMAL),
     (OperatingMode.IDLE, OperatingMode.NORMAL, False, OperatingMode.IDLE),
+    (OperatingMode.RAMP_DOWN, OperatingMode.NORMAL, False, OperatingMode.RAMP_DOWN),
+    (OperatingMode.FAULT, OperatingMode.NORMAL, False, OperatingMode.FAULT),
+    (OperatingMode.NORMAL, OperatingMode.NORMAL, False, OperatingMode.NORMAL),
     (OperatingMode.NORMAL, OperatingMode.RAMP_DOWN, True, OperatingMode.RAMP_DOWN),
     (OperatingMode.NORMAL, OperatingMode.IDLE, True, OperatingMode.IDLE),
     (OperatingMode.NORMAL, OperatingMode.FAULT, False, OperatingMode.NORMAL),
@@ -396,3 +399,17 @@ def test_stop_operation_reports_false_and_skips_the_log_when_the_stop_fails(monk
     monkeypatch.setattr(cs.electrolyser, "stop", lambda: False)
     assert cs.stop_operation() is False
     assert not (tmp_path / cs.log_file).exists()
+
+
+def test_small_but_real_shortfall_still_warns(pem, caplog):
+    pem.current_voltage = 44.5  # one PID step lands about 0.2 V short of 45 V
+    with caplog.at_level(logging.WARNING, logger=ecs.logger.name):
+        pem.set_voltage_setpoint(45.0)
+    assert 0.01 < abs(pem.current_voltage - 45.0) < 1.0
+    assert any("not reached in one step" in r.message for r in caplog.records)
+
+
+def test_power_exactly_nominal_does_not_warn(pem, caplog):
+    with caplog.at_level(logging.WARNING, logger=ecs.logger.name):
+        pem.set_power_setpoint(pem.specs.nominal_power)
+    assert not [r for r in caplog.records if "exceeds nominal" in r.message]
