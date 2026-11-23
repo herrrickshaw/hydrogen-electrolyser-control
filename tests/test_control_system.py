@@ -413,3 +413,13 @@ def test_power_exactly_nominal_does_not_warn(pem, caplog):
     with caplog.at_level(logging.WARNING, logger=ecs.logger.name):
         pem.set_power_setpoint(pem.specs.nominal_power)
     assert not [r for r in caplog.records if "exceeds nominal" in r.message]
+
+
+def test_ramp_to_voltage_never_requests_more_than_the_target():
+    cs = ElectrolyserControlSystem()
+    cs.start_operation()
+    asked = []
+    orig = cs.set_voltage
+    cs.set_voltage = lambda v: (asked.append(v), orig(v))[1]
+    cs.ramp_to_voltage(target_voltage=25.0, ramp_rate=10.0, dt=1.0)
+    assert asked == [10.0, 20.0, 25.0]

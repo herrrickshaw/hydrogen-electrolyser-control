@@ -400,3 +400,27 @@ def test_demo_callbacks_are_wired_to_the_controller(monkeypatch, capsys):
         cb("emergency_stop", "test reason")
     out = capsys.readouterr().out
     assert out.count("SAFETY EVENT: emergency_stop - test reason") == 2
+
+
+def test_schedule_is_still_applied_at_exactly_its_duration(monkeypatch):
+    class FrozenDatetime:
+        @staticmethod
+        def now():
+            return T0
+
+    monkeypatch.setattr(eac, "datetime", FrozenDatetime)  # elapsed is exactly 0.0
+    c = AdvancedElectrolyserController()
+    c.system.start_operation()
+    c.set_power_ramp(500.0, 1500.0, 0.0)  # elapsed == duration -> ramp is at its end value
+    one_iteration(c, monkeypatch)
+    assert c.last_status["power"] == 1500.0
+
+
+def test_event_message_is_the_first_alert(monkeypatch):
+    c = AdvancedElectrolyserController()
+    c.system.start_operation()
+    c.system.set_voltage(1e6)
+    c.system.set_voltage(-5.0)
+    assert len(c.system.electrolyser.safety_monitor.alerts) == 2
+    one_iteration(c, monkeypatch)
+    assert "too high" in c.logger.events[0].message
